@@ -1,0 +1,17 @@
+{
+  "name": "ex3",
+  "version": "1.0.0",
+  "description": "%PDF-1.6\r%����\r 10 0 obj\r<</Linearized 1/L 67474/O 12/E 63179/N 1/T 67170/H [ 516 185]>>\rendobj\r                  \r 35 0 obj\r<</DecodeParms<</Columns 4/Predictor 12>>/Filter/FlateDecode/ID[<112162EC415A9FDD62DF999F38797654><F4E4849738CD2849BB6B7736A467A3A3>]/Index[10 42]/Info 9 0 R/Length 112/Prev 67171/Root 11 0 R/Size 52/Type/XRef/W[1 2 1]>>stream\r h�bbd\u0010``b`Z\u000b$\u0018��\u0004C;�`y\b$��A\\;��U\u0010� �f�$�@\\C �\u0019\u0004\u0012�\u0000\u0012�@br@�d=���\u0007\u0012R��\u0004�'�P-\u0001i\u0003\u0019�\u0018\b�M\u001d��\u0011��\u0006*ad�\t�20RN�g��\t �\u00000�\u0010\\\r endstream\rendobj\rstartxref\r 0\r %%EOF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1"
+  }
+}

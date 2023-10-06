@@ -1,1 +1,1 @@
-# projets
+> Ici, vous retrouverez mes projets personnels ainsi que mes exercices de cours.

@@ -1,0 +1,9 @@
+{
+  "exemple": [
+    {
+        "nom":"Guillaume",
+        "adresse": {"cp":17000, "ville":"La Rochelle"},
+        "notes": [1, 2, 4, 8, 16, 32]
+    }
+  ]
+}

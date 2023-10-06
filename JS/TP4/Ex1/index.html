@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alexy DELAPORTE</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <hgroup>
+            <h1>LP MIAW</h1>
+            <h2>Remise à niveau</h2>
+        </hgroup>
+        <nav id="menu_principal" class="">
+            <ul>
+                <li><a href="index.html" class="actif">Base</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Notre personnel</h2>
+        <section class="set-of-pcard">
+
+
+            <article class="pcard pcard--reduit">
+                <div class="pcard__suppression">x</div>
+                <header class="pcard__header">
+                    <div class="pcard__cadre-portrait">
+                        <img class="pcard__portrait" src="assets/img/portrait6.jpg" alt="Maelle">
+                    </div>
+
+                    <h2 class="pcard__nom">Maëlle Paquereau</h2>
+                    <h3 class="pcard__fonction">Médiatrice Scientifique</h3>
+                </header>
+
+                <section class="pcard__main">
+                    <a href="#" class="pcard__more">Voir +</a>
+                </section>
+
+                <footer class="pcard__footer">
+                    <div class="pcard__resultat">
+                        <div class="pcard__score">78%</div>
+                        <div class="pcard__item">Satisfaction</div>
+                    </div>
+                    <div class="pcard__resultat">
+                        <div class="pcard__score">75%</div>
+                        <div class="pcard__item">Occupation</div>
+                    </div>
+                </footer>
+
+            </article>
+
+            <article class="pcard pcard--reduit">
+                <div class="pcard__suppression">x</div>
+                <header class="pcard__header">
+                    <div class="pcard__cadre-portrait">
+                        <img class="pcard__portrait" src="assets/img/portrait3.jpg">
+                    </div>
+
+                    <h2 class="pcard__nom">Johnatan Trust</h2>
+                    <h3 class="pcard__fonction">Web Designer</h3>
+                </header>
+
+                <section class="pcard__main">
+                    <a href="#" class="pcard__more">Voir +</a>
+                </section>
+
+                <footer class="pcard__footer">
+                    <div class="pcard__resultat">
+                        <div class="pcard__score">87%</div>
+                        <div class="pcard__item">Satisfaction</div>
+                    </div>
+                    <div class="pcard__resultat">
+                        <div class="pcard__score">89%</div>
+                        <div class="pcard__item">Occupation</div>
+                    </div>
+                </footer>
+
+            </article>
+            <article class="pcard pcard--reduit">
+                <div class="pcard__suppression">x</div>
+                <header class="pcard__header">
+                    <div class="pcard__cadre-portrait">
+                        <img class="pcard__portrait" src="assets/img/portrait5.jpg">
+                    </div>
+
+                    <h2 class="pcard__nom">Hérald Norton</h2>
+                    <h3 class="pcard__fonction">Coach Sportif</h3>
+                </header>
+
+                <section class="pcard__main">
+                    <a href="#" class="pcard__more">Voir +</a>
+                </section>
+
+                <footer class="pcard__footer">
+                    <div class="pcard__resultat">
+                        <div class="pcard__score">82%</div>
+                        <div class="pcard__item">Satisfaction</div>
+                    </div>
+                    <div class="pcard__resultat">
+                        <div class="pcard__score">95%</div>
+                        <div class="pcard__item">Occupation</div>
+                    </div>
+                </footer>
+
+            </article>
+
+        </section>
+    </main>
+    <aside>
+        <section>
+            <p class="regenerer bouton">Faire réapparaitre la deuxième card</p>
+            <p class="regenerer2 bouton">Faire réapparaitre toutes les card</p>
+            <p class="addCard bouton">Ajouter une card</p>
+            <p class="addTimer bouton">ajouter une carte toutes les 10s/p>
+            <p class="stopTimer bouton">stopper l'ajout de card</p>
+            
+        </section>
+        <section>
+            <h2>formulaire</h2>
+
+            <form method="get">
+                <label for="nom">Nom complet :</label>
+                <input type="text" id="nom" required> <br>
+
+                <label for="fonction">Fonction :</label>
+                <input type="text" id="fonction" required> <br>
+
+                <label for="photo">Photo :</label>
+                <input type="text" id="photo" pattern=".+\.jpg" required> <br>
+
+                <input type="submit" value="Ajouter"/>
+
+            </form>
+        </section>
+    </aside>
+
+    </main>
+
+    <footer>
+        <p id="texte-footer">Des exos de base sur l'accès au DOM</p>
+    </footer>
+
+</body>
+
+</html>

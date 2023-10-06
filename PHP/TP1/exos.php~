@@ -1,0 +1,128 @@
+<?php
+$j = 1;
+
+function comptage($min, $max) {
+    $res = 0;
+    for ($i = $min; $i <= $max; $i++) :
+        if ($i % 2 == 0) :
+            $res += $i;
+        endif;
+    endfor;
+    return $res;
+}
+
+function prixCinema(int $age, int $reduction, int $jour) {
+    $tarif = 8;
+
+    if($age<=14):
+        $tarif = 4;
+    elseif($age<18):
+        $tarif = 5;
+    elseif($jour==1):
+        $tarif = 6;
+    elseif($reduction):
+        $tarif = 7;
+    endif;
+
+    return $tarif;
+}
+
+$ageEtudiants = [];
+for($i=0; $i<10; $i++):
+    $ageEtudiants[] = rand(18, 40);
+endfor;
+
+$ageMinimum = $ageEtudiants[0];
+$ageMaximum = $ageEtudiants[0];
+$ageSomme = 0;
+
+foreach ($ageEtudiants as $age):
+    if($age < $ageMinimum):
+        $ageMinimum = $age;
+    endif;
+    if($age > $ageMaximum):
+        $ageMaximum = $age;
+    endif;
+    $ageSomme += $age;
+endforeach;
+
+$ageMoyen = $ageSomme/sizeof($ageEtudiants);
+
+include 'donnees.php';
+
+$nbJoursAnnee = 0;
+
+setlocale(LC_TIME, 'fr_FR.UTF8', 'fr.UTF8', 'fr_FR.UTF-8', 'fr.UTF-8');$aujourdhui = getdate();
+print_r($aujourdhui);
+
+?>
+
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>Les boucles</h2>
+<h3>For</h3>
+
+<ul>
+    <?php for($i=1;$i<=10;$i++) : ?>
+        <li style="display: inline"><?= $i ?></li>
+    <?php endfor ?>
+</ul>
+
+
+<h3>While</h3>
+<ul>
+    <?php while($j<=10) : ?>
+        <li style="display: inline"><?= $j ?></li>
+        <?php $j++;
+    endwhile ?>
+</ul>
+
+<h3>Pairs entre 4 et 200</h3>
+<?= comptage(4, 200) ?>
+
+<h2>Prix du cinéma</h2>
+<?= prixCinema(35, 0, 5) ?>
+
+<h2>Âge des étudiants</h2>
+<ul>
+    <?php foreach ($ageEtudiants as $age): ?>
+    <li style="display: inline"><?= $age?></li>
+    <?php endforeach;?>
+</ul>
+<h3>Âge minimum</h3>
+    <?= $ageMinimum  ?>
+<h3>Âge maximum</h3>
+    <?= $ageMaximum  ?>
+<h3>Moyenne d'âge</h3>
+    <?= $ageMoyen  ?>
+
+<h2>Calendrier</h2>
+
+
+<?php foreach ($jourMois as $annee=>$tabDetails):?>
+
+    <?= $annee?> <br>
+
+    <?php foreach ($tabDetails as $mois=>$jours): ?>
+        Le mois de <?= $mois ?> contient <?= $jours ?> jours <br>
+        <?php $nbJoursAnnee += $jours?>
+    <?php endforeach;?>
+    L'année contient <?= $nbJoursAnnee?> jours
+    <?php $nbJoursAnnee = 0;?>
+    <br> <br>
+<?php endforeach;?>
+
+
+Le mois de <?= $moisActuel ?> contient <?= $joursMoisActuel ?> jours
+
+
+</body>
+</html>

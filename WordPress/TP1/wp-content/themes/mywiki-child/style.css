@@ -1,0 +1,24 @@
+/*
+ * Theme Name: MyWki Enfant
+ * Template: mywiki
+*/
+
+.covid {
+	height: 5vh;
+	width: 100vw;
+	background-color: #FF0000;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.covid p {
+	padding-top: 1.5vh;
+}
+
+.header-text {
+	font-family: 'Dancing Script', cursive;
+}
+
+#footer {
+	background-color: green !important;
+}

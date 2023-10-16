@@ -1,0 +1,58 @@
+:root {
+    --bleu: #1D1363;
+    --vert: #3DE073;
+    --blanc: #FFFFFF;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color: var(--vert);
+    color: var(--bleu);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav p {
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+nav span {
+    color: var(--blanc);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: var(--bleu);
+    color: var(--blanc);
+}
+
+h1 {
+    font-size: 5vw;
+    font-weight: 200;
+}
+
+h1 .br {
+    display: block;
+}
+
+h1 span span {
+    color: var(--vert);
+}
+
+i {
+    position: absolute;
+    bottom: 2vh;
+    font-size: 3vw;
+    color: var(--vert);
+}

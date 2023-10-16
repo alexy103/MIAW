@@ -1,0 +1,121 @@
+$violet: #8C1641;
+$blanc: #F2F2F2;
+$beige: #F2D685;
+$orange: #F2B80C;
+$bordeaux: #8C0E02;
+
+/* Règles générales */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: 'VAG Round';
+}
+
+a,
+a:hover,
+a:visited {
+    color: $blanc;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 100vh;
+    gap: 15vh;
+
+    background-image: url('../images/design/myrtilles.png'), url('../images/design/citrons.png');
+    background-repeat: no-repeat;
+    background-position: top 50% right 6%, bottom 20% left 0%;
+    background-size: 15%, 30%;
+
+    img {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    nav {
+        height: 50vh;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+
+            li {
+                a {
+                    display: block;
+                    border-radius: 40px;
+                    font-size: 7vw;
+                    padding: 4vw 7vw;
+                    background-color: $orange;
+                }
+            }
+        }
+    }
+}
+
+.welcome {
+    height: 100vh;
+    color: $blanc;
+
+    .partagez {
+        height: 50vh;
+        background-image: url('../images/content/photo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        img {
+            height: 20vw;
+            width: 20vw;
+        }
+
+        h1 {
+            font-family: 'Mark My Words';
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                a {
+                    display: block;
+                    border-radius: 40px;
+                    background-color: #8c0d0245;
+                    padding: 3vw 4vw;
+                    font-size: 6vw;
+                }
+            }
+        }
+    }
+
+    .bienvenue {
+        height: 50vh;
+        background-color: $orange;
+    }
+}

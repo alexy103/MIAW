@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* Règles générales */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "VAG Round";
+}
+
+a,
+a:hover,
+a:visited {
+  color: #F2F2F2;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  height: 100vh;
+  gap: 15vh;
+  background-image: url("../images/design/myrtilles.png"), url("../images/design/citrons.png");
+  background-repeat: no-repeat;
+  background-position: top 50% right 6%, bottom 20% left 0%;
+  background-size: 15%, 30%;
+}
+header img {
+  width: 50vw;
+  height: 50vw;
+}
+header nav {
+  height: 50vh;
+}
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+header nav ul li a {
+  display: block;
+  border-radius: 40px;
+  font-size: 7vw;
+  padding: 4vw 7vw;
+  background-color: #F2B80C;
+}
+
+.welcome {
+  height: 100vh;
+  color: #F2F2F2;
+}
+.welcome .partagez {
+  height: 50vh;
+  background-image: url("../images/content/photo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.welcome .partagez img {
+  height: 20vw;
+  width: 20vw;
+}
+.welcome .partagez h1 {
+  font-family: "Mark My Words";
+}
+.welcome .partagez ul {
+  display: flex;
+  flex-direction: column;
+}
+.welcome .partagez ul li a {
+  display: block;
+  border-radius: 40px;
+  background-color: rgba(140, 13, 2, 0.2705882353);
+  padding: 3vw 4vw;
+  font-size: 6vw;
+}
+.welcome .bienvenue {
+  height: 50vh;
+  background-color: #F2B80C;
+}/*# sourceMappingURL=style.css.map */

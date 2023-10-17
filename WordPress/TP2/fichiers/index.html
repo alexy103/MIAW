@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Interior Design</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/interior.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+    id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:22px">Fermer le menu</a>
+    <div class="w3-container">
+      <img src="img/logo.png" alt="">
+    </div>
+    <div class="w3-bar-block menu-menu-header-container">
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="page.html">Page d’exemple</a></li>
+        <li class="btn-lpmiaw"><a href="https://lpmiaw.univ-lr.fr/">LPMIAW</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Interior Design</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- #### FIN HEADER #### -->
+
+    <div class="w3-container" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Accueil</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>
+        Baroque, épurée ou bohème, la décoration réalise une percée remarquée dans tous les intérieurs et le phénomène
+        n’en est qu’à ses débuts. Mais si tout un chacun rêve sur les pièces ultra-lookées des nombreux magazines
+        consacrés à la question, tout le monde n’a pas forcément le temps, ou le talent, de personnaliser lui-même son
+        lieu de vie. C’est là qu’entre en scène le décorateur d’intérieur.
+      </p>
+      <p>
+        A la différence de l’architecte qui intervient sur la structure des pièces ou l’agencement des cloisons, le
+        décorateur d’intérieur apporte la touche finale pour créer l’ambiance : les revêtements, le mobiliers, les
+        rideaux, réaménager une chambre d’amis, réaliser une fresque murale, rendre fonctionnel, esthétique et
+        confortable un espace de travail… Créatif et cultivé, le décorateur puise son inspiration dans le monde qui
+        l’entoure. Et compose pour ses clients une décoration qui leur ressemble.
+      </p>
+    </div>
+
+
+    <div class="w3-container">
+      <h2 class="w3-text-red">Nos 3 dernières actualités</h1>
+    </div>
+    <div class="w3-row-padding">
+
+      <!-- Actu 1 -->
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <a href=""><img src="img/bedroom.jpg" alt=""></a>
+          <div class="w3-container">
+            <h3><a href="">Les grandes lignes intemporelles</a></h3>
+            <p class="w3-opacity"><a href="">Chambre</a></p>
+            <p><small><i>Le 12/12/2019</i></small></p>
+            <p>On trouve de plus en plus de mobilier en rotin, qui était déjà bien présent, me direz-vous [ Voir ou
+              revoir [ Tendance déco ] Le rotin, stop ou encore ? ], mais dans des teintes naturelles.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Actu 2 -->
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <a href=""><img src="img/diningroom.jpg" alt=""></a>
+          <div class="w3-container">
+            <h3><a href="">Le vintage est tendance, n’oubliez pas !</a></h3>
+            <p class="w3-opacity"><a href="">Salon</a>, <a href="">Séjour</a></p>
+            <p><small><i>Le 23/06/2020</i></small></p>
+            <p>Le vintage est tendance depuis déjà une bonne dizaine d’année et plus. Les marques comme Urban Outfitters
+              n’en finissent pas de surfer sur la vague. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Actu 3 -->
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <a href=""><img src="img/livingroom2.jpg" alt=""></a>
+          <div class="w3-container">
+            <h3><a href="">Donnez du style grâce aux détails</a></h3>
+            <p class="w3-opacity"><a href="">Salle de bain</a></p>
+            <p><small><i>Le 06/10/2020</i></small></p>
+            <p>Hello, hello les Amoureux de la déco,Je suis tombée dernièrement sur deux mises en scène réalisées par
+              deux grandes maques de la grande distribution, j’ai nommé Zara Home et Ikea.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+  <!-- End page content -->
+  </div>
+
+  <!-- W3.CSS Container -->
+  <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <p class="w3-right">Copyright DELAPORTE Alexy</p>
+  </div>
+
+
+
+  <script src="js/global.js"></script>
+</body>
+
+</html>

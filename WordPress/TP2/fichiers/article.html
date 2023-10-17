@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Interior Design</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/interior.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  </head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Fermer le menu</a>
+  <div class="w3-container">
+    <img src="img/logo.png" alt="">
+  </div>
+  <div class="w3-bar-block menu-menu-header-container">
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="page.html">Page d’exemple</a></li>
+      <li class="btn-lpmiaw"><a href="https://lpmiaw.univ-lr.fr/">LPMIAW</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Interior Design</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Delectus assumenda soluta.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim explicabo atque est dolores deserunt quo sequi, ex aut mollitia a magnam, fugiat ad quis provident molestias laudantium at officiis.
+    
+  </div>
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+  <p class="w3-right">Copyright NOM Prénom</p>
+</div>
+
+<script src="js/global.js"></script>
+
+</body>
+</html>

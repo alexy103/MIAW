@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TP1 Symfony{% endblock %}
+
+{% block body %}
+    <main>
+        <div class="wrapper cf">
+
+
+            <!-- posts list -->
+            <div id="posts-list" class="cf">
+
+                <article>
+                    <div class="feature-image">
+                        <a href="#"><img src="{{ asset(evenement.image) }}" alt="Thumbnail" /></a>
+                        <a href='{{ path('app_panier', { 'nom' : evenement.nom }) }}' class='link-button green'>Réserver</a>
+                        <div class="entry-date"><div class="month">{{ evenement.date|date('M') }}</div><div class="number">
+                            {{ evenement.date|date('d') }}</div></div>
+                    </div>
+                    <div class="excerpt">
+                        <a href="single.html" class="post-heading" >{{ evenement.nom }}</a>
+                        <p>
+                            {{ evenement.description }}
+                        </p>
+
+                    </div>
+                    <i class="tape"></i>
+                </article>
+
+
+
+            </div>
+        </div>
+    </main>
+{% endblock %}

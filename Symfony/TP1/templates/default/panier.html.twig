@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TP1 Symfony{% endblock %}
+
+{% block body %}
+    <main>
+        <h1>Votre panier</h1>
+        <div class="wrapper">
+            {% if evenement %}
+                <a href="{{ path('app_evenement', { 'nom': evenement }) }}">Retour</a>
+            {% endif %}
+            <ul>
+                {% for p in panier %}
+                    <li>{{ p }}</li>
+                {% endfor %}
+            </ul>
+            {% if panier|length > 0 %}
+                <a href="{{ path('vider_panier') }}">Vider le panier</a>
+            {% else %}
+                <p>Votre panier est vide !</p>
+            {% endif %}
+
+
+        </div>
+
+    </main>
+{% endblock %}

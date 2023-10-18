@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TP1 Symfony{% endblock %}
+
+{% block body %}
+    <main>
+        <div class="wrapper">
+
+            <!-- SLIDER -->
+            <div class="slider-wrapper theme-default theme-project theme-home">
+                <div class="ribbon"></div>
+                <div id="slider" class="nivoSlider">
+                    <img src={{ asset("img/dummies/slides/01.jpg") }} alt="" />
+                    <img src={{ asset("img/dummies/slides/02.jpg") }} alt="" />
+                    <img src={{ asset("img/dummies/slides/03.jpg") }} alt="" />
+                </div>
+            </div>
+            <!-- ENDS SLIDER -->
+
+            <!-- headline -->
+            <div class="headline">
+                TP1 Symfony - LPMiaw - DFS
+                
+                
+            </div>
+            <!-- ENDS headline -->
+
+            <ul id="filter-container-feature" class="feature">
+                {% for evenement in evenements %}
+                    <li>
+                        <a href="{{ path('app_evenement', { 'nom': evenement.nom }) }}" class="thumb" ><img src='{{ evenement.image}}' alt="" />
+                            <div class="date"><span class="d">{{ evenement.date|date('d') }}</span><span class="m">{{ evenement.date|date('M') }}</span></div>
+                        </a>
+                        <div class="caption">{{ evenement.description|u.truncate(20) }}</div>
+                    </li>
+                {% endfor %}
+
+
+            </ul>
+        </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TP1 Symfony{% endblock %}
+
+{% block body %}
+    <main>
+        <div class="wrapper">
+
+            <!-- page-content -->
+            <div class="page-content">
+
+                <h2 class="heading">Contactez-nous</h2>
+                {% for message in app.flashes('success') %}
+                        {{ message }}
+                {% endfor %}
+                <!-- form -->
+                <form id="contactForm" action="#" method="post">
+                    <fieldset>
+
+                        <p>
+                            {{ form_row(form.nom) }}
+                        </p>
+                        <p>
+                            {{ form_row(form.email) }}
+                        </p>
+
+
+                        <p>
+                            {{ form_row(form.message) }}
+                        </p>
+
+
+
+                        <p>{{ form_row(form.submit, { 'label': 'Envoyez' }) }}</p>
+
+                    </fieldset>
+
+                </form>
+                <!-- ENDS form -->
+                <div class="c-1"></div>
+                <div class="c-2"></div>
+                <div class="c-3"></div>
+                <div class="c-4"></div>
+            </div><!-- ENDS page-content -->
+
+
+
+        </div>
+    </main>>
+{% endblock %}

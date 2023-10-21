@@ -28,6 +28,7 @@ img {
 
 body {
   width: 100vw;
+  overflow-x: none;
 }
 
 header {
@@ -71,31 +72,292 @@ header nav ul li a {
   height: 50vh;
   background-image: url("../images/content/photo.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 .welcome .partagez img {
-  height: 20vw;
-  width: 20vw;
+  height: 40vw;
+  width: 40vw;
 }
 .welcome .partagez h1 {
   font-family: "Mark My Words";
+  font-size: 6vw;
 }
 .welcome .partagez ul {
   display: flex;
   flex-direction: column;
+  gap: 1vh;
 }
 .welcome .partagez ul li a {
+  text-align: center;
+  width: 60vw;
   display: block;
   border-radius: 40px;
-  background-color: rgba(140, 13, 2, 0.2705882353);
+  background-color: rgba(140, 2, 43, 0.4039215686);
   padding: 3vw 4vw;
   font-size: 6vw;
 }
 .welcome .bienvenue {
   height: 50vh;
   background-color: #F2B80C;
+}
+.welcome .bienvenue h2 {
+  font-family: "Mark My Words";
+  font-size: 11vw;
+  text-align: center;
+  padding: 5vh 0;
+}
+.welcome .bienvenue p {
+  margin: 3vh 10vw;
+  text-align: center;
+}
+
+.partager {
+  height: 100vh;
+}
+.partager h2 {
+  font-family: "Mark My Words";
+  font-size: 10vw;
+  color: #8C1641;
+  text-align: center;
+  padding: 5vh 0;
+}
+.partager figure {
+  height: 20vh;
+  display: flex;
+  gap: 5vw;
+  margin: 4vh 6vw;
+}
+.partager figure img {
+  height: 20vh;
+}
+.partager figure figcaption h3 {
+  font-family: "Mark My Words";
+  color: #8C1641;
+  font-size: 8vw;
+  text-wrap: nowrap;
+}
+.partager figure figcaption h3::after {
+  position: absolute;
+  content: "";
+  width: 20vw;
+  margin-top: 4vh;
+  left: 54vw;
+  height: 1px;
+  background-color: #8C1641;
+}
+.partager figure figcaption p {
+  margin-top: 1vh;
+}
+
+.comment {
+  height: 100vh;
+  background-image: url("../images/design/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: 120vw 100vh;
+}
+.comment h2 {
+  color: #F2F2F2;
+  font-size: 11vw;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10vh 2vw;
+}
+.comment h2 span {
+  display: block;
+  font-size: 13vw;
+}
+.comment h2::after {
+  position: absolute;
+  content: "";
+  width: 25vw;
+  margin-top: 3vh;
+  left: 37.5vw;
+  height: 4px;
+  background-color: #fff;
+}
+.comment i {
+  position: absolute;
+  margin-top: 3vh;
+  left: 37.5vw;
+  color: #fff;
+  font-size: 50vw;
+}
+
+.valeurs {
+  height: 100vh;
+  background-color: #8C1641;
+  color: #F2F2F2;
+}
+.valeurs h2 {
+  font-size: 11vw;
+  font-family: "Mark My Words";
+  text-align: center;
+  padding: 7vh 2vw;
+}
+.valeurs article h3 {
+  font-size: 5vw;
+  font-family: "Mark My Words";
+  text-align: center;
+}
+.valeurs article h3::after {
+  position: absolute;
+  content: "";
+  width: 25vw;
+  margin-top: 3vh;
+  left: 37.5vw;
+  height: 2px;
+  background-color: #fff;
+}
+.valeurs article p {
+  margin: 5vh 20vw;
+  text-align: center;
+}
+
+.etsi {
+  height: 70vh;
+  background-image: url("../images/design/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.etsi h2 {
+  color: #F2F2F2;
+  font-size: 11vw;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10vh 2vw;
+}
+.etsi h2 span {
+  margin-top: 2vh;
+  display: block;
+  font-size: 13vw;
+}
+.etsi ul {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 5vh;
+  margin-top: 5vh;
+}
+.etsi ul li a {
+  text-align: center;
+  width: 80vw;
+  display: block;
+  border-radius: 40px;
+  background-color: rgba(140, 2, 43, 0.4039215686);
+  padding: 3vw 4vw;
+  font-size: 9vw;
+}
+
+.actu {
+  height: 60vh;
+}
+.actu article {
+  height: 30vh;
+  background-image: url("../images/design/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  color: #F2F2F2;
+}
+.actu article h2 {
+  font-size: 13vw;
+  text-transform: uppercase;
+  text-align: center;
+}
+.actu article h3 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  text-align: center;
+  order: -1;
+  margin: 2vh 0;
+}
+.actu article a {
+  display: block;
+  align-self: center;
+  text-align: center;
+  font-size: 6vw;
+  width: 60vw;
+  border-radius: 40px;
+  background-color: #F2B80C;
+  margin-top: 5vh;
+  padding: 3vw 4vw;
+}
+.actu aside {
+  height: 30vh;
+}
+.actu aside h2 {
+  font-family: "Mark My Words";
+  font-size: 7vw;
+  color: #8C1641;
+  text-align: center;
+  padding: 4vh 0 2vh;
+}
+.actu aside ul {
+  display: flex;
+  gap: 2vw;
+}
+.actu aside ul li img {
+  height: 100%;
+}
+
+footer {
+  background-color: #353334;
+  color: #F2F2F2;
+}
+footer .reseaux {
+  display: flex;
+  justify-content: center;
+  padding: 2vh 0;
+  gap: 3vw;
+}
+footer .reseaux li {
+  font-size: 7vw;
+  background-color: #F2F2F2;
+  color: #353334;
+  border-radius: 100%;
+  padding: 2vw;
+}
+footer .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .menu li {
+  border-bottom: 2px solid #8C1641;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2vh 0;
+}
+footer .menu li span {
+  border-bottom: 2px solid #8C1641;
+  display: block;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+}
+footer form label {
+  text-align: center;
+}
+footer form input {
+  width: 80%;
+  padding: 2vw;
+  margin: 2vh 0 4vh;
+  border-radius: 10%;
+  align-self: center;
+  text-align: center;
+  font-style: italic;
+}
+footer p {
+  color: #5c595b;
+  background-color: #353334;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 5vh;
 }/*# sourceMappingURL=style.css.map */

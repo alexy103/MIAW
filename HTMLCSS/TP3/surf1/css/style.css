@@ -142,5 +142,6 @@ section p {
 .fa-water {
     display: block;
     text-align: center;
+    justify-content: center;
     margin: 2vh 0;
 }

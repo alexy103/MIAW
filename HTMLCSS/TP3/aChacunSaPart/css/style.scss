@@ -33,6 +33,7 @@ img {
 
 body {
     width: 100vw;
+    overflow-x: none;
 }
 
 header {
@@ -83,30 +84,34 @@ header {
         height: 50vh;
         background-image: url('../images/content/photo.png');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
 
         img {
-            height: 20vw;
-            width: 20vw;
+            height: 40vw;
+            width: 40vw;
         }
 
         h1 {
             font-family: 'Mark My Words';
+            font-size: 6vw;
         }
 
         ul {
             display: flex;
             flex-direction: column;
+            gap: 1vh;
 
             li {
                 a {
+                    text-align: center;
+                    width: 60vw;
                     display: block;
                     border-radius: 40px;
-                    background-color: #8c0d0245;
+                    background-color: #8c022b67;
                     padding: 3vw 4vw;
                     font-size: 6vw;
                 }
@@ -117,5 +122,273 @@ header {
     .bienvenue {
         height: 50vh;
         background-color: $orange;
+
+        h2 {
+            font-family: 'Mark My Words';
+            font-size: 11vw;
+            text-align: center;
+            padding: 5vh 0;
+        }
+
+        p {
+            margin: 3vh 10vw;
+            text-align: center;
+        }
+    }
+}
+
+.partager {
+    height: 100vh;
+    h2 {
+        font-family: 'Mark My Words';
+        font-size: 10vw;
+        color: $violet;
+        text-align: center;
+        padding: 5vh 0;
+    }
+    figure {
+        height: 20vh;
+        display: flex;
+        gap: 5vw;
+        margin: 4vh 6vw;
+        img {
+            height: 20vh;
+        }
+        figcaption {
+            h3 {
+                font-family: 'Mark My Words';
+                color: $violet;
+                font-size: 8vw;
+                text-wrap: nowrap;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 20vw;
+                    margin-top: 4vh;
+                    left: 54vw;
+                    height: 1px;
+                    background-color: $violet;
+                }
+            }
+            p {
+               margin-top: 1vh; 
+            }
+        }
+    }
+}
+
+.comment {
+    height: 100vh;
+    background-image: url('../images/design/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: 120vw 100vh;
+    h2 {
+        color: $blanc;
+        font-size: 11vw;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10vh 2vw;
+        span {
+            display: block;
+            font-size: 13vw;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 25vw;
+            margin-top: 3vh;
+            left: 37.5vw;
+            height: 4px;
+            background-color: #fff;
+        }
+    }
+    i {
+        position: absolute;
+            margin-top: 3vh;
+            left: 37.5vw;
+            color: #fff;
+            font-size: 50vw;
+    }
+}
+
+.valeurs {
+    height: 100vh;
+    background-color: $violet;
+    color: $blanc;
+    h2 {
+        font-size: 11vw;
+        font-family: 'Mark My Words';
+        text-align: center;
+        padding: 7vh 2vw;
+    }
+    article {
+        h3 {
+            font-size: 5vw;
+            font-family: 'Mark My Words';
+            text-align: center;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 25vw;
+                margin-top: 3vh;
+                left: 37.5vw;
+                height: 2px;
+                background-color: #fff;
+            }
+        }
+        p {
+            margin: 5vh 20vw;
+            text-align: center;
+        }
+    }
+}
+
+.etsi {
+    height: 70vh;
+    background-image: url('../images/design/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    h2 {
+        color: $blanc;
+        font-size: 11vw;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10vh 2vw;
+        span {
+            margin-top: 2vh;
+            display: block;
+            font-size: 13vw;
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 5vh;
+        margin-top: 5vh;
+
+        li {
+            a {
+                text-align: center;
+                width: 80vw;
+                display: block;
+                border-radius: 40px;
+                background-color: #8c022b67;
+                padding: 3vw 4vw;
+                font-size: 9vw;
+            }
+        }
+    }
+}
+
+.actu {
+    height: 60vh;
+    article {
+        height: 30vh;
+        background-image: url('../images/design/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        color: $blanc;
+        h2 {
+            font-size: 13vw;
+            text-transform: uppercase;
+            text-align: center;
+            }
+        h3 {
+            font-size: 7vw;
+            text-transform: uppercase;
+            text-align: center;
+            order: -1;
+            margin: 2vh 0;
+        }
+        a {
+            display: block;
+            align-self: center;
+            text-align: center;
+            font-size: 6vw;
+            width: 60vw;
+            border-radius: 40px;
+            background-color: $orange;
+            margin-top: 5vh;
+            padding: 3vw 4vw;
+        }
+    }
+    aside {
+        height: 30vh;
+        h2 {
+            font-family: 'Mark My Words';
+            font-size: 7vw;
+            color: $violet;
+            text-align: center;
+            padding: 4vh 0 2vh;
+        }
+        ul {
+            display: flex;
+            gap: 2vw;
+            li {
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #353334;
+    color: $blanc;
+    .reseaux {
+        display: flex;
+        justify-content: center;
+        padding: 2vh 0;
+        gap: 3vw;
+        li {
+            font-size: 7vw;
+            background-color: $blanc;
+            color: #353334;
+            border-radius: 100%;
+            padding: 2vw;
+        }
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li {
+            border-bottom: 2px solid $violet;
+            width: fit-content;
+            margin: 2vh 0;
+            span {
+                border-bottom: 2px solid $violet;
+                display: block;
+            }
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        label {
+            text-align: center;
+        }
+        input {
+            width: 80%;
+            padding: 2vw; 
+            margin: 2vh 0 4vh;
+            border-radius: 10%;
+            align-self: center;
+            text-align: center;
+            font-style: italic;
+        }
+    }
+    p {
+        color: #5c595b;
+        background-color: #353334;
+        text-align: center;
+        font-style: italic;
+        padding-bottom: 5vh;
     }
 }

@@ -8,6 +8,7 @@
     <link href="fonts/stylesheet.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6839368886.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -45,8 +46,8 @@
                 </p>
             </section>
         </section>
-        <section>
-            <h2>Que puis-je partager ?</h2>
+        <section class="partager">
+            <h2>Que puis je partager ?</h2>
             <figure>
                 <img src="images/content/photo_plat1.jpg" alt="Plat 1">
                 <figcaption>
@@ -78,11 +79,11 @@
                 </figcaption>
             </figure>
         </section>
-        <section>
-            <h2>Comment ça marche ?</h2>
-            <video src=""></video>
+        <section class="comment">
+            <h2>Comment <span>ça marche ?</span></h2>
+            <i class="fa-solid fa-play"></i>
         </section>
-        <section>
+        <section class="valeurs">
             <h2>Nos valeurs</h2>
             <article>
                 <h3>Éviter le gaspillage</h3>
@@ -101,19 +102,19 @@
                     personnes qui partagent les mêmes valeurs que vous !</p>
             </article>
         </section>
-        <section>
+        <section class="etsi">
             <h2>Et si on
-                <span> essayait ? </span> <!-- mettre h2 span display:block -->
+                <span> essayait ? </span>
             </h2>
             <ul>
                 <li><a>Je partage !</a></li>
                 <li><a>Je commande !</a></li>
             </ul>
         </section>
-        <section>
+        <section class="actu">
             <article>
                 <h2>L'actu !</h2>
-                <h3>À chacun sa part</h3> <!-- FLEX : order -1 pour le h3 et il va monter au dessus -->
+                <h3>À chacun sa part</h3>
                 <a href="">Lire les articles</a>
             </article>
             <aside>
@@ -127,18 +128,20 @@
         </section>
     </main>
     <footer>
-        <ul>
-            <li><img src="images/design/facebook.png" alt="Facebook"></li>
-            <li><img src="images/design/twitter.png" alt="Twitter"></li>
-            <li><img src="images/design/instagram.png" alt="Instagram"></li>
+        <ul class="reseaux">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
         </ul>
-        <ul>
-            <li>Conditions générales et mentions légales</li>
+        <ul class="menu">
+            <li><span>Conditions générales</span>et mentions légales</li>
             <li>Foire aux questions</li>
             <li>Sécurité</li>
         </ul>
-        <label for="mail">Newsletter :</label>
-        <input type="email" id="mail" name="mail" placeholder="Pour vous inscrire, entrez votre email">
+        <form action="">
+            <label for="mail">Newsletter :</label>
+            <input type="email" id="mail" name="mail" placeholder="Pour vous inscrire, entrez votre email">
+        </form>
         <p>© Tous droits réservés - À CHACUN SA PART - 2016</p>
     </footer>
 </body>

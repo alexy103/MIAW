@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from './pages/Home';
-import { Quiz } from './pages/Quizzes';
 import { GeneralKnowledge } from './pages/GeneralKnowledge';
 import { ScienceNature } from './pages/ScienceNature';
 import { Sports } from './pages/Sports';
@@ -12,26 +11,28 @@ import { Vehicles } from './pages/Vehicles';
 import { Movies } from './pages/Movies';
 import { VideoGames } from './pages/VideoGames';
 import { Music } from './pages/Music';
+import { DifficultyProvider } from './DifficultyContext';
 
 const App = () => {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="*" element={<Home />} />
-                <Route path="/quizzes" element={<Quiz />} />
-                <Route path="/quizzes/general-knowledge" element={<GeneralKnowledge />} />
-                <Route path="/quizzes/science-nature" element={<ScienceNature />} />
-                <Route path="/quizzes/sports" element={<Sports />} />
-                <Route path="/quizzes/geography" element={<Geography />} />
-                <Route path="/quizzes/art" element={<Art />} />
-                <Route path="/quizzes/animals" element={<Animals />} />
-                <Route path="/quizzes/vehicles" element={<Vehicles />} />
-                <Route path="/quizzes/movies" element={<Movies />} />
-                <Route path="/quizzes/video-games" element={<VideoGames />} />
-                <Route path="/quizzes/music" element={<Music />} />
-            </Routes>
-        </BrowserRouter>
+        <DifficultyProvider>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="*" element={<Home />} />
+                    <Route path="/general-knowledge" element={<GeneralKnowledge />} />
+                    <Route path="/science-nature" element={<ScienceNature />} />
+                    <Route path="/sports" element={<Sports />} />
+                    <Route path="/geography" element={<Geography />} />
+                    <Route path="/art" element={<Art />} />
+                    <Route path="/animals" element={<Animals />} />
+                    <Route path="/vehicles" element={<Vehicles />} />
+                    <Route path="/movies" element={<Movies />} />
+                    <Route path="/video-games" element={<VideoGames />} />
+                    <Route path="/music" element={<Music />} />
+                </Routes>
+            </BrowserRouter>
+        </DifficultyProvider>
     );
 };
 
-export default App; <h1>Hello</h1>
+export default App;

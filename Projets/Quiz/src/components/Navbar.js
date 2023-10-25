@@ -1,19 +1,29 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
-    return (
-        <nav className="navigation">
-            <ul>
-                <NavLink to='/' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
-                    <li>Home</li>
+const Navbar = (props) => {
+    const quiz = props.quiz;
+
+    if (!quiz) {
+        return (
+            <header className='home'>
+                <NavLink to='/'>
+                    <h1>Brain Pulse</h1>
                 </NavLink>
-                <NavLink to='/quizzes' className={(nav) => (nav.isActive ? 'nav-active' : '')}>
-                    <li>Quizzes</li>
+            </header>
+        );
+    }
+    else {
+        return (
+            <header className='quiz'>
+                <NavLink to='/'>
+                    <i className="fa-solid fa-left-long"></i>
                 </NavLink>
-            </ul>
-        </nav>
-    );
-};
+                <h1>{quiz}</h1>
+            </header>
+
+        );
+    }
+}
 
 export default Navbar;

@@ -1,11 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import ListeQuiz from '../components/ListeQuiz';
+import Difficulty from '../components/Difficulty';
 
 const Home = () => {
     return (
         <div>
             <Navbar />
-            <h1>Brain Pulse</h1>
+            <ListeQuiz />
+            <Difficulty />
         </div>
     );
 };

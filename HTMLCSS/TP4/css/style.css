@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/* Règles générales */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #E8E8E8;
+}
+
+a,
+a:hover,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.index header {
+  height: 10vh;
+  width: 100vw;
+  background-color: #67B0D6;
+  padding: 1vh 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.index header h1 {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  margin-left: 2rem;
+  flex: 1 1 0%;
+}
+.index header h1 a {
+  color: #F8F8F8;
+}
+.index header h1 a:visited {
+  color: #F8F8F8;
+}
+.index header ul {
+  display: flex;
+  gap: 4vw;
+}
+.index header i {
+  color: #35454E;
+  font-size: 2rem;
+}
+.index .new-collection {
+  background-image: url("../img/index/new-collection.png");
+  background-color: #F8F8F8;
+  background-position: top 0 left -5rem;
+  background-size: cover;
+  height: 30vh;
+}
+.index .new-collection h2,
+.index .new-collection h3 {
+  margin-left: 60%;
+  font-size: 1.8rem;
+}
+.index .new-collection h2 {
+  font-weight: bold;
+  padding-top: 15%;
+  color: #323C3F;
+}
+.index .new-collection h3 {
+  color: #A6A6AD;
+  line-height: 1.8;
+}
+.index .new-collection .button {
+  text-align: right;
+}
+.index .new-collection .button a {
+  display: inline-block;
+  margin-top: 20%;
+  margin-right: 5%;
+  padding: 1.5rem 1.5rem;
+  border-radius: 5px;
+  background-color: #f6846a;
+  color: #f8f8f8;
+  text-align: center;
+  text-transform: uppercase;
+}
+.index form {
+  padding: 5vw;
+}
+.index form input[type=text] {
+  padding: 1.2rem 2rem 1.2rem 4rem;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+  background-image: url("../img/searchicon.png");
+  background-position: 40px 10px;
+  background-repeat: no-repeat;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  text-indent: 7rem;
+  font-size: 2rem;
+}
+.index main {
+  text-align: center;
+}
+.index main > h2 {
+  color: #323C3F;
+  font-size: 2.2rem;
+  padding: 2vh 0;
+}
+.index main > h2::before, .index main > h2::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -1.5vh);
+  height: 2px;
+  width: 20%;
+  background-color: rgba(128, 128, 128, 0.452);
+}
+.index main > h2::after {
+  transform: translate(-50%, 2vh);
+}
+.index main .produits {
+  display: flex;
+  gap: 3vw;
+  flex-wrap: wrap;
+  padding-top: 5vh;
+  margin: 0 3vw;
+}
+.index main .produits article {
+  background-color: rgb(248, 248, 248);
+  flex: 1 1 40%;
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.index main .produits article h2 {
+  color: #323C3F;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.index main .produits article p {
+  color: #AAABBC;
+  font-size: 1.2rem;
+  line-height: 2;
+  padding-bottom: 2rem;
+}
+.index main .fa-spin {
+  background-color: rgb(110, 176, 200);
+  font-size: 3rem;
+  color: white;
+  padding: 3vw;
+  margin: 5vh 0;
+  border-radius: 100%;
+}
+.index main .button a {
+  display: inline-block;
+  padding: 1.5rem 4.5rem;
+  border-radius: 5px;
+  background-color: #373F42;
+  color: #f8f8f8;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.advice header {
+  width: 100vw;
+  background-color: #67B0D6;
+  padding: 2vh 5vw 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.advice header h1 {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  margin-left: 2rem;
+  flex: 1 1 0%;
+}
+.advice header h1 a {
+  color: #F8F8F8;
+}
+.advice header h1 a:visited {
+  color: #F8F8F8;
+}
+.advice header i {
+  color: #35454E;
+  font-size: 2rem;
+}
+.advice header ul {
+  margin-top: 3vh;
+  width: 100%;
+  display: flex;
+  text-transform: uppercase;
+  color: white;
+}
+.advice header ul li {
+  flex: 1 1 25%;
+  text-align: center;
+  height: 4vh;
+}
+.advice header ul .active {
+  color: #323C3F;
+  position: relative;
+}
+.advice header ul .active::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #323C3F;
+}
+.advice .discover article {
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+}
+.advice .discover article:nth-child(1) {
+  background-image: url("../img/advice/img2.png");
+}
+.advice .discover article:nth-child(1) h2 {
+  color: #001456;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10% 0 0 5%;
+}
+.advice .discover article:nth-child(1) h3 {
+  color: #acafaf;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 5% 0 0 5%;
+}
+.advice .discover article:nth-child(2) {
+  background-image: url("../img/advice/img1.png");
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+.advice .discover article:nth-child(2) h2 {
+  padding-top: 40%;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+.advice .discover article:nth-child(2) h3 {
+  padding-top: 5%;
+  font-size: 1.6rem;
+}
+.advice form {
+  padding: 5vw;
+}
+.advice form input[type=text] {
+  padding: 1.2rem 2rem 1.2rem 4rem;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+  background-image: url("../img/searchicon.png");
+  background-position: 40px 10px;
+  background-repeat: no-repeat;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  text-indent: 7rem;
+  font-size: 2rem;
+}
+.advice main {
+  text-align: center;
+}
+.advice main .collections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vw;
+}
+.advice main .collections figure {
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  flex: 1 1 40%;
+  border-radius: 10px;
+  background-color: #F8F8F8;
+}
+.advice main .collections figure:nth-child(1) {
+  margin-left: 5vw;
+}
+.advice main .collections figure:nth-child(2) {
+  margin-right: 5vw;
+}
+.advice main .collections figure:nth-child(3) {
+  margin: 0 5vw;
+}
+.advice main .collections figure figcaption {
+  padding: 3vw;
+  text-align: center;
+}
+.advice main .fa-spin {
+  background-color: rgb(110, 176, 200);
+  font-size: 3rem;
+  color: white;
+  padding: 3vw;
+  margin: 5vh 0;
+  border-radius: 100%;
+}/*# sourceMappingURL=style.css.map */

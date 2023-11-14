@@ -330,7 +330,6 @@ footer .menu {
 }
 footer .menu li {
   border-bottom: 2px solid #8C1641;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 2vh 0;
 }

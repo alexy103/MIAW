@@ -386,10 +386,8 @@ img {
 .product main figure img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
-          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
   margin-bottom: -7vh;
 }
 .product main figure ul {

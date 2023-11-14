@@ -1,0 +1,33 @@
+@import 'mixins';
+@import 'reset';
+@import 'base';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #19191B;
+    color: white;
+    // font-family: 'Nunito Sans', sans-serif;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 3vh 5vw;
+
+        &__company {
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+
+            &--logo {}
+
+            &--title {
+                font-size: 3rem;
+            }
+        }
+
+        &--menu {}
+
+    }
+}

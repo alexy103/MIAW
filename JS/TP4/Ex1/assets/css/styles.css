@@ -125,6 +125,7 @@ body > header h2 {
   color: inherit;
   display: block;
   padding: 10px;
+  -webkit-transition: 0.5s ease background;
   transition: 0.5s ease background;
   border-radius: 3px 3px 0 0;
 }
@@ -176,9 +177,7 @@ aside a {
   border: solid #aaa 1px;
   border-radius: 1rem;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   transition: all 0.3s ease;
   backface-visibility: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -273,8 +272,7 @@ body > footer p {
   line-height: 1;
   color: #FFF;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   margin-bottom: 2rem;
   flex: 1 1 20rem;
   overflow: hidden;
@@ -316,8 +314,7 @@ body > footer p {
   height: 8rem;
   width: 8rem;
   background-color: rgba(255, 255, 255, 0.06);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border-radius: 50%;
   margin: 30px auto 20px auto;
 }
@@ -353,8 +350,7 @@ body > footer p {
   letter-spacing: 1.5px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.06);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   text-decoration: none;
   color: #fff;
   display: block;

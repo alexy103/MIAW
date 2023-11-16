@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}TP2 Symfony{% endblock %}</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+    {% block stylesheets %}
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="{{ asset('css/reset.css') }}" >
+        <link rel="stylesheet" href="{{ asset('css/materialize.min.css') }}" >
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" >
+    {% endblock %}
+
+    {% block javascripts %}
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" defer></script>
+        <script type="text/javascript" src="{{ asset('js/materialize.min.js') }}" defer></script>
+        <script type="text/javascript" src="{{ asset('js/main.js') }}" defer></script>
+    {% endblock %}
+</head>
+<body>
+<header>
+    <h1>TP2 Symfony</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ path('app_homepage') }}" class="tooltipped" data-tooltip="Revenir à l'accueil">Accueil</a></li>
+            <li><a href="{{ path('app_spectacle_test') }}" class="tooltipped" data-tooltip="Spectacle test">Test</a></li>
+            <li><a href="{{ path('app_spectacles') }}" class="tooltipped" data-tooltip="Tous les évènements">Spectacles</a></li>
+            <li><a href="{{ path('app_lieux') }}" class="tooltipped" data-tooltip="Tous les lieux">Lieux</a></li>
+            <li><a href="{{ path('app_addSpectacle') }}" class="tooltipped" data-tooltip="Ajout d'un spectacle">+ Spectacle</a></li>
+            <li><a href="{{ path('app_lieu_index') }}" class="tooltipped" data-tooltip="Gestion des lieux">Crud</a></li>
+            <li><a href="{{ path('app_inscription') }}" class="tooltipped" data-tooltip="Inscription">Inscription</a></li>
+        </ul>
+    </nav>
+</header>
+{% block body %}{% endblock %}
+</body>
+<footer>
+    <p>Année Universitaire 2023 | 2024 - LPMiaw</p>
+</footer>
+</html>

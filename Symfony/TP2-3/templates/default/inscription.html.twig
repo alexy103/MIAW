@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <main>
+        {{ form(form) }}
+
+        {% if done %}
+        <p>Inscription effectuée !</p>
+        {% endif %}
+
+        {% if alreadyDone is defined %}
+        <p>Cette personne est déjà inscrite à ce spectacle !</p>
+        {% endif %}
+
+        {% if spectacle is defined %}
+            <a href="{{ path('app_spectacle', {'id': spectacle.id}) }}">Voir le spectacle</a>
+        {% endif %}
+
+
+    </main>
+{% endblock %}

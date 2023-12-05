@@ -11,6 +11,7 @@ import { Vehicles } from './pages/Vehicles';
 import { Movies } from './pages/Movies';
 import { VideoGames } from './pages/VideoGames';
 import { Music } from './pages/Music';
+import { Leaderboard } from './pages/Leaderboard';
 import { DifficultyProvider } from './DifficultyContext';
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
                     <Route path="/movies" element={<Movies />} />
                     <Route path="/video-games" element={<VideoGames />} />
                     <Route path="/music" element={<Music />} />
+                    <Route path="/leaderboard/:quizLower" element={<Leaderboard />} />
                 </Routes>
             </BrowserRouter>
         </DifficultyProvider>

@@ -1,0 +1,62 @@
+@use 'reset';
+
+/* Règles générales */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+a,
+a:hover,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Règles spécifiques
+
+.hand {
+    background-image: url('../doigt/1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: auto;
+}
+
+@media screen and (width>544px) {
+    .hand {
+        background-image: url('../doigt/2.jpg');
+    }
+}
+
+@media screen and (width>768px) {
+    .hand {
+        background-image: url('../doigt/3.jpg');
+    }
+}
+
+@media screen and (width>992px) {
+    .hand {
+        background-image: url('../doigt/4.jpg');
+    }
+}
+
+@media screen and (width>1200px) {
+    .hand {
+        background-image: url('../doigt/5.jpg');
+    }
+}

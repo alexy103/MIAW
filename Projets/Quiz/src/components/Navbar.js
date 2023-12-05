@@ -21,7 +21,6 @@ const Navbar = (props) => {
                 </NavLink>
                 <h1>{quiz}</h1>
             </header>
-
         );
     }
 }

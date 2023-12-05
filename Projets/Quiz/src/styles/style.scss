@@ -12,6 +12,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--blanc);
+    height: 100vh;
+    user-select: none;
 }
 
 .quiz,
@@ -192,16 +194,16 @@ body {
     color: $gris;
 
     h2 {
-        font-size: 3vw;
+        font-size: 2.5vw;
         font-family: 'Jost', sans-serif;
         text-align: center;
-        margin-top: 5vh;
+        margin: 5vh 2vw 1vh;
     }
 
     ul {
         display: flex;
         flex-wrap: wrap;
-        height: 70vh;
+        height: 50vh;
         align-items: center;
 
         li {
@@ -274,6 +276,131 @@ body {
             }
         }
     }
+
+    .score {
+        position: absolute;
+        top: 3vh;
+        right: 5vw;
+        z-index: 2;
+        color: #DCDCDC;
+    }
+
+    .next {
+        position: absolute;
+        width: fit-content;
+        bottom: 20vh;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1vw 3vw;
+        background-color: #883FAA;
+        color: #DCDCDC;
+        transition: .5s;
+        cursor: pointer;
+
+        &:hover {
+            scale: 1.05;
+            transform: translateX(-48%);
+        }
+    }
+
+    .end {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
+        margin-left: 10vw;
+
+        :nth-child(-n+3) {
+            flex: 25%;
+
+            p {
+                background-color: #DCDCDC;
+                color: #883FAA;
+                border: 1px solid #883FAA;
+
+                &:hover {
+                    background-color: #883FAA;
+                    color: #DCDCDC;
+                }
+            }
+
+            &:hover {
+                flex: 30%;
+            }
+
+        }
+
+        :nth-child(4) {
+            flex: 100%;
+            margin-top: 5vh;
+
+            p {
+                color: rgb(204, 161, 19);
+                border: 1px solid rgb(204, 161, 19);
+
+                &:hover {
+                    scale: 1.05;
+                    color: #DCDCDC;
+                    background-color: rgb(204, 161, 19);
+                }
+            }
+
+
+        }
+
+        a {
+            transition: .5s;
+            font-size: 1.5vw;
+            cursor: pointer;
+
+            p {
+                transition: .5s;
+                text-align: center;
+                border-radius: 10px;
+                padding: 1vw;
+            }
+        }
+    }
+
+    .popup {
+        position: absolute;
+        z-index: 3;
+        left: 36vw;
+        top: 40vh;
+        padding: 2vw 4vw;
+        width: 20vw;
+        background-color: rgba(44, 44, 44, 0.9);
+        border-radius: 10px;
+
+        form {
+            font-size: 2vw;
+            display: flex;
+            align-items: flex-end;
+
+            label {
+                display: inline-block;
+                color: #DCDCDC;
+            }
+        }
+    }
+}
+
+.leaderboard {
+    ul {
+        margin-top: 5vh;
+
+        li {
+            text-align: center;
+            width: fit-content;
+            margin: 2vh auto;
+            background-color: #DCDCDC;
+            border: 2px solid #883FAA;
+            border-radius: 10px;
+            padding: 1vh 0;
+            width: 50vw;
+
+            p {}
+        }
+    }
 }
 
 .difficulty {
@@ -315,4 +442,8 @@ body {
             cursor: pointer;
         }
     }
+}
+
+.hidden {
+    display: none;
 }

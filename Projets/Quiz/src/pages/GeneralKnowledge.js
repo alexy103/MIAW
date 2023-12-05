@@ -10,8 +10,7 @@ const GeneralKnowledge = () => {
     return (
         <div className='catQuiz'>
             <Navbar quiz={quiz} />
-            <Questions categorie={9} difficulte={selectedDifficulty} />
-
+            <Questions categorie={9} difficulte={selectedDifficulty} quiz={quiz} quizLower={quiz.toLowerCase()} />
         </div>
     );
 };

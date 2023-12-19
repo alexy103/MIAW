@@ -5,12 +5,13 @@ import { useDifficulty } from '../DifficultyContext';
 
 const ScienceNature = () => {
     const quiz = 'Science & Nature'
+    const slug = 'science-nature'
     const { selectedDifficulty } = useDifficulty();
 
     return (
         <div className='catQuiz'>
             <Navbar quiz={quiz} />
-            <Questions categorie={17} difficulte={selectedDifficulty} quiz={quiz} quizLower={quiz.toLowerCase()} />
+            <Questions categorie={17} difficulte={selectedDifficulty} slug={slug} />
         </div>
     );
 };

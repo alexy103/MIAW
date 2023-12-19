@@ -30,7 +30,7 @@ const App = () => {
                     <Route path="/movies" element={<Movies />} />
                     <Route path="/video-games" element={<VideoGames />} />
                     <Route path="/music" element={<Music />} />
-                    <Route path="/leaderboard/:quizLower" element={<Leaderboard />} />
+                    <Route path="/leaderboard/:difficulte/:slug" element={<Leaderboard />} />
                 </Routes>
             </BrowserRouter>
         </DifficultyProvider>

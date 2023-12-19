@@ -5,7 +5,7 @@ import axios from 'axios';
 import he from 'he';
 import { Link, useNavigate } from "react-router-dom";
 
-const Questions = ({ categorie, difficulte, quizLower, quiz }) => {
+const Questions = ({ categorie, difficulte, slug }) => {
     const [data, setData] = useState([]);
     const [questionIndex, setQuestionIndex] = useState(0);
     const [score, setScore] = useState(0);
@@ -20,7 +20,7 @@ const Questions = ({ categorie, difficulte, quizLower, quiz }) => {
     }, [categorie, difficulte]);
 
     useEffect(() => {
-        setLeaderboardData(JSON.parse(localStorage.getItem(`leaderboard-${quizLower}`)));
+        setLeaderboardData(JSON.parse(localStorage.getItem(`leaderboard-${difficulte}-${slug}`)));
     }, []);
 
 
@@ -106,9 +106,9 @@ const Questions = ({ categorie, difficulte, quizLower, quiz }) => {
     function addUserScore(username, score) {
         const newScore = { username, score };
         if (leaderboardData !== null) {
-            localStorage.setItem(`leaderboard-${quizLower}`, JSON.stringify([...leaderboardData, newScore]))
+            localStorage.setItem(`leaderboard-${difficulte}-${slug}`, JSON.stringify([...leaderboardData, newScore]))
         } else {
-            localStorage.setItem(`leaderboard-${quizLower}`, JSON.stringify([newScore]))
+            localStorage.setItem(`leaderboard-${difficulte}-${slug}`, JSON.stringify([newScore]))
         }
         console.log(newScore);
         console.log(localStorage.getItem('leaderboard'));
@@ -126,7 +126,7 @@ const Questions = ({ categorie, difficulte, quizLower, quiz }) => {
             event.preventDefault();
             const username = document.getElementById('username').value;
             addUserScore(username, score);
-            navigate(`/leaderboard/${quizLower}`);
+            navigate(`/leaderboard/${difficulte}/${slug}`);
         });
     }
 
@@ -150,7 +150,7 @@ const Questions = ({ categorie, difficulte, quizLower, quiz }) => {
                 <Link to='/'><p className='menu hidden'>Back to main menu</p></Link>
                 <a onClick={() => reload()}><p className='again hidden'>Play again</p></a>
                 <a><p className='addLeaderboard hidden' onClick={() => setShowPopup(true)}>Add my score to leaderboard</p></a>
-                <Link to={`/leaderboard/${quizLower}`} state={{ quizTitle: quiz }}><p className='leaderboard hidden'>Leaderboard</p></Link>
+                <Link to={`/leaderboard/${difficulte}/${slug}`}><p className='leaderboard hidden'>Leaderboard</p></Link>
             </div>
             <div className="popup hidden">
                 <form action='#'>

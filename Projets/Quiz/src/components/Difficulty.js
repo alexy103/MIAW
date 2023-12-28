@@ -10,19 +10,19 @@ const Difficulty = () => {
             <div>
                 <p
                     onClick={() => handleDifficultyChange('easy')}
-                    style={{ color: selectedDifficulty === 'easy' ? '#883FAA' : '' }}
+                    style={{ color: selectedDifficulty === 'easy' ? '#FFD53F' : '' }}
                 >
                     Easy
                 </p>
                 <p
                     onClick={() => handleDifficultyChange('medium')}
-                    style={{ color: selectedDifficulty === 'medium' ? '#883FAA' : '' }}
+                    style={{ color: selectedDifficulty === 'medium' ? '#FFD53F' : '' }}
                 >
                     Medium
                 </p>
                 <p
                     onClick={() => handleDifficultyChange('hard')}
-                    style={{ color: selectedDifficulty === 'hard' ? '#883FAA' : '' }}
+                    style={{ color: selectedDifficulty === 'hard' ? '#FFD53F' : '' }}
                 >
                     Hard
                 </p>

@@ -160,13 +160,22 @@ img {
   height: auto;
 }
 
+@font-face {
+  font-family: "Flinders";
+  src: url("../../public/fonts/FlindersTrial-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Dillan";
+  src: url("../../public/fonts/MADE Dillan PERSONAL USE.otf");
+}
+@font-face {
+  font-family: "Lovtony";
+  src: url("../../public/fonts/lovtony.ttf");
+}
 body {
-  font-family: "Playpen Sans", cursive;
+  font-family: "Lovtony";
   position: relative;
   background-color: #DCDCDC;
-  background-image: url("../../public/images/Group 19.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   color: var(--blanc);
   height: 100vh;
   user-select: none;
@@ -174,17 +183,20 @@ body {
 
 .quiz,
 .home {
+  font-family: "Flinders";
   display: flex;
   justify-content: center;
-  height: 4vh;
-  width: 100vw;
+  align-items: center;
+  height: 5vh;
+  width: 100%;
   padding: 2vh 0;
   background-color: #2C2C2C;
   color: #FAFAFA;
 }
 .quiz h1,
 .home h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #DCDCDC;
   text-align: center;
   width: fit-content;
 }
@@ -194,7 +206,7 @@ body {
 }
 .quiz .fleche {
   margin-left: 2vw;
-  align-self: center;
+  color: #DCDCDC;
 }
 .quiz .fa-left-long {
   font-size: 2vw;
@@ -205,6 +217,7 @@ body {
   scale: 1.2;
 }
 .quiz .backToQuiz {
+  color: #DCDCDC;
   align-self: center;
   margin-right: 2vw;
   cursor: pointer;
@@ -214,24 +227,19 @@ body {
   scale: 1.1;
 }
 
-.home h1 {
-  text-align: center;
-}
-
 .listeQuiz {
   display: flex;
   justify-content: center;
   width: 80vw;
-  margin: 0 auto;
+  margin: 5vh auto;
   flex-wrap: wrap;
-  gap: 1vw;
+  gap: 7vh;
 }
 .listeQuiz li {
-  margin-top: 5vh;
   border-radius: 0.8em;
-  font-size: 1.8rem;
-  width: 30vw;
-  padding: 2em;
+  font-size: 2.8rem;
+  flex: calc(50% - 7vh);
+  padding: 3em 2em;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -240,7 +248,8 @@ body {
   letter-spacing: 0.3em;
 }
 .listeQuiz li:hover a {
-  background-color: rgba(0, 0, 0, 0.8);
+  color: #FAFAFA;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .listeQuiz li:hover::before {
   left: 0;
@@ -259,65 +268,68 @@ body {
 }
 .listeQuiz li:nth-of-type(1) {
   background: url("../../public/images/knowledge.png");
-  background-position-y: -230px;
+  background-position-y: 90%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .listeQuiz li:nth-of-type(2) {
   background: url("../../public/images/science.jpg");
-  background-position-y: -250px;
+  background-position-y: 75%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .listeQuiz li:nth-of-type(3) {
   background: url("../../public/images/sport.jpg");
-  background-position-y: -220px;
+  background-position-y: 75%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .listeQuiz li:nth-of-type(4) {
   background: url("../../public/images/geography.jpg");
-  background-position-y: -60px;
+  background-position-y: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .listeQuiz li:nth-of-type(5) {
   background: url("../../public/images/art.jpg");
+  background-position-y: 60%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .listeQuiz li:nth-of-type(6) {
   background: url("../../public/images/animals.jpeg");
-  background-position-y: -120px;
+  background-position-y: 35%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .listeQuiz li:nth-of-type(7) {
   background: url("../../public/images/vehicle.webp");
-  background-position-y: -170px;
+  background-position-y: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .listeQuiz li:nth-of-type(8) {
   background: url("../../public/images/movie.jpg");
-  background-position-y: -20px;
+  background-position-y: 5%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .listeQuiz li:nth-of-type(9) {
   background: url("../../public/images/videogames.jpg");
-  background-position-y: -220px;
+  background-position-y: 65%;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 7vh;
 }
 .listeQuiz li:nth-of-type(10) {
   background: url("../../public/images/music.jpg");
-  background-position-y: -130px;
+  background-position-y: 40%;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 7vh;
 }
 .listeQuiz li a {
-  color: #FAFAFA;
+  color: rgba(250, 250, 250, 0);
   display: block;
   width: 100%;
   height: 100%;
@@ -328,15 +340,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(10, 5, 15, 0.2);
 }
 
 .questions {
   color: #2C2C2C;
 }
 .questions h2 {
+  font-family: "Dillan";
   font-size: 2.5vw;
-  font-family: "Jost", sans-serif;
   text-align: center;
   margin: 5vh 2vw 1vh;
 }
@@ -356,7 +368,7 @@ body {
   text-align: center;
   font-size: 2vw;
   width: 25vw;
-  border: 3px solid #883FAA;
+  border: 3px solid #2C2C2C;
   background-color: #DCDCDC;
   padding: 2vw;
   border-radius: 5px;
@@ -370,12 +382,12 @@ body {
   color: #FAFAFA;
 }
 .questions ul li .correctColor {
-  background-color: green;
+  background-color: rgb(0, 120, 0);
   color: #FAFAFA;
   border: 3px solid #2C2C2C;
 }
 .questions ul li .incorrectColor {
-  background-color: red;
+  background-color: rgb(220, 0, 0);
   color: #FAFAFA;
   border: 3px solid #2C2C2C;
 }
@@ -385,7 +397,7 @@ body {
   left: -0.5%;
   height: 0%;
   width: 101%;
-  background-color: #883FAA;
+  background-color: #7c7c7c;
   z-index: -1;
   transition: 0.5s;
 }
@@ -403,8 +415,10 @@ body {
   height: 52%;
 }
 .questions .score {
+  font-family: "Lovtony";
   position: absolute;
-  top: 3vh;
+  top: 1.5vh;
+  font-size: 2rem;
   right: 5vw;
   z-index: 2;
   color: #DCDCDC;
@@ -416,7 +430,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   padding: 1vw 3vw;
-  background-color: #883FAA;
+  background-color: #2C2C2C;
+  font-size: 2rem;
   color: #DCDCDC;
   transition: 0.5s;
   cursor: pointer;
@@ -436,12 +451,12 @@ body {
 }
 .questions .end :nth-child(-n+3) p {
   background-color: #DCDCDC;
-  color: #883FAA;
-  border: 1px solid #883FAA;
+  color: #2C2C2C;
+  border: 1px solid #2C2C2C;
 }
 .questions .end :nth-child(-n+3) p:hover {
-  background-color: #883FAA;
-  color: #DCDCDC;
+  background-color: #7c7c7c;
+  color: #FAFAFA;
 }
 .questions .end :nth-child(-n+3):hover {
   flex: 30%;
@@ -467,7 +482,7 @@ body {
 .questions .end a p {
   transition: 0.5s;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 1vw;
 }
 .questions .popup {
@@ -476,59 +491,64 @@ body {
   left: 36vw;
   top: 40vh;
   padding: 2vw 4vw;
-  width: 20vw;
   background-color: rgba(44, 44, 44, 0.9);
   border-radius: 10px;
 }
 .questions .popup form {
   font-size: 2vw;
   display: flex;
-  align-items: flex-end;
+  align-items: stretch;
 }
 .questions .popup form label {
   display: inline-block;
   color: #DCDCDC;
+  margin-right: 1vw;
+}
+.questions .popup form input {
+  border-radius: 5px;
+  border: none;
 }
 
 .leaderboard ul {
   margin-top: 5vh;
 }
 .leaderboard ul li {
+  font-size: 3rem;
   text-align: center;
   width: fit-content;
   margin: 2vh auto;
-  background-color: #DCDCDC;
-  border: 1px solid #883FAA;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 1vh 0;
   width: 50vw;
+  border: 1px solid #2C2C2C;
 }
 .leaderboard ul li :first-child {
   margin-bottom: 2vh;
 }
 .leaderboard ul li:nth-child(1) {
   background-color: rgb(245, 193, 22);
-  border: 1px solid rgb(170, 134, 15);
+  border: none;
   background-image: url("../../public/images/1.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 .leaderboard ul li:nth-child(2) {
   background-color: rgb(194, 194, 194);
-  border: 1px solid rgb(122, 122, 122);
+  border: none;
   background-image: url("../../public/images/2.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 .leaderboard ul li:nth-child(3) {
   background-color: #c06531;
-  border: 1px solid rgb(128, 75, 40);
+  border: none;
   background-image: url("../../public/images/3.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .difficulty {
+  font-family: "Flinders";
   position: absolute;
   top: 50vh;
   transform: translate(-70%, -50%);
@@ -541,7 +561,6 @@ body {
   border-radius: 5%;
   text-transform: uppercase;
   transition: 0.5s;
-  font-family: "Jost", sans-serif;
 }
 .difficulty h2 {
   align-self: center;

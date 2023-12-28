@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="{{ asset('images/Logo.svg') }}">
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        {% endblock %}
+
+        {% block javascripts %} 
+        <script src="https://kit.fontawesome.com/6839368886.js" crossorigin="anonymous"></script>
+        <script src="{{ asset('js/script.js') }}" defer></script>
+        {% endblock %}
+    </head>
+    <body class="body">
+        <header class="header">
+                <img src="{{ asset('images/Logo.svg') }}" alt="Logo de l'hôtel" class="header__img">
+                <input type="checkbox" id="icone-burger-close" class="header__input">
+                <label for="icone-burger-close" class="header__label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="header__items">
+                    <li class="header__item">Accueil</li>
+                    <li class="header__item">Nos chambres</li>
+                    <li class="header__item">Nos services</li>
+                    <li class="header__item">Contact</li>
+                </ul>
+        </header>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

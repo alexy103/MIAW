@@ -1,0 +1,53 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the body font and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  height: 100vh;
+  width: 100vw;
+}
+
+body.result {
+	width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Set the main container styles */
+main {
+  zoom: 2;
+  height: 80%;
+  width: 90%;
+  margin: 5%;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Set the header styles */
+header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 5vh;
+  text-align: center;
+  font-size: 200%;
+}
+
+/* Set the footer styles */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 5vh;
+  text-align: center;
+}
+
+#result-value {
+    font-size: 3em;
+    font-weight: bold;
+	background-color: #C0C0C0;
+}

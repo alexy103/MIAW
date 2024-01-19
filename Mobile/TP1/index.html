@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>App TD dev. Mobile</title>
+    <link rel="stylesheet" href="css/mini.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("service-worker.js")
+          .then(function (registration) {
+            console.log(
+              "ServiceWorker registration successful with scope: ",
+              registration.scope
+            );
+          })
+          .catch(function (err) {
+            console.log("ServiceWorker registration failed: ", err);
+          });
+      }
+    </script>
+    <header>App TD dev. Mobile</header>
+
+    <main>
+      <h2>Combien de jours entre deux dates...</h2>
+
+      <form id="saisie">
+        Date début <input type="date" name="startdate" id="sdate" /><br />
+        Date cible <input type="date" name="enddate" id="edate" /><br />
+      </form>
+
+      <button id="b_calcul">Calcul (client side)</button>
+
+      <p><br /><br /></p>
+
+      <div id="result">
+        <h2>Nombre de jours</h2>
+        <div id="result-value">-</div>
+      </div>
+    </main>
+
+    <footer>La Rochelle Université - 2023</footer>
+  </body>
+</html>

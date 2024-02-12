@@ -1,4 +1,6 @@
 import React from "react";
+import StarIcon from "@mui/icons-material/Star";
+import StarHalfIcon from "@mui/icons-material/StarHalf";
 import AntineaPages from "./App";
 
 class Landing extends React.Component {
@@ -19,13 +21,26 @@ class Landing extends React.Component {
       .then((data) => {
         // Mettre à jour l'état avec le rating de Antinea
         console.log(data);
-        this.setState({ antineaRating: data.rating });
+        this.setState({ antineaRating: data });
       })
       .catch((error) => console.error("Erreur lors de la requête :", error));
   }
 
   handleButtonClick = () => {
     this.setState({ showAntineaPages: true });
+  };
+
+  renderStarIcon = (index, antineaRating) => {
+    const isHalfStar = index + 0.5 === antineaRating;
+    const isFullStar = index + 1 <= antineaRating;
+
+    if (isFullStar) {
+      return <StarIcon key={index} size={24} />;
+    } else if (isHalfStar) {
+      return <StarHalfIcon key={index} size={24} />;
+    } else {
+      return <StarIcon key={index} size={24} style={{ color: "transparent" }} />;
+    }
   };
 
   render() {
@@ -37,7 +52,6 @@ class Landing extends React.Component {
     } = this.state;
 
     if (showAntineaPages) {
-      // Si showAntineaPages est vrai, affiche seulement AntineaPages
       return <AntineaPages />;
     }
 
@@ -55,12 +69,10 @@ class Landing extends React.Component {
         >
           <img src="./images/antinea/img1.jpg" alt="" width="200" />
           <h2>Antinéa</h2>
-          {/* Afficher le nombre d'étoiles pour Antinea */}
+          {/* Afficher le nombre d'étoiles pour Antinea avec StarIcon */}
           {antineaRating !== null && (
             <div>
-              {Array.from({ length: antineaRating * 2 }, (_, index) => (
-                <span key={index}>&#9733;</span> // Utilise le caractère d'étoile
-              ))}
+              {[...Array(5)].map((_, index) => this.renderStarIcon(index, antineaRating))}
             </div>
           )}
           {!showAntineaPages ? (
@@ -78,6 +90,9 @@ class Landing extends React.Component {
         >
           <img src="./images/republique1.jpg" alt="" width="200" />
           <h2>République</h2>
+          <div>
+            {[...Array(5)].map((_, index) => this.renderStarIcon(index, 2.5))}
+          </div>
           {!showRepublicPages ? <button>&gt;</button> : ""}
         </div>
 
@@ -91,6 +106,9 @@ class Landing extends React.Component {
         >
           <img src="./images/vespucci.jpg" alt="" width="200" />
           <h2>Vespucci</h2>
+          <div>
+            {[...Array(5)].map((_, index) => this.renderStarIcon(index, 5))}
+          </div>
           {!showVespucciPages ? <button>&gt;</button> : ""}
         </div>
       </div>

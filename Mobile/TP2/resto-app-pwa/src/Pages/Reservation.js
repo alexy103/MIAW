@@ -8,17 +8,38 @@ const Reservation = function Reservation(props) {
   const [date, setDate] = useState("");
   const [heure, setHeure] = useState("");
   const [nombrePersonnes, setNombrePersonnes] = useState(2);
+  const [reservationResult, setReservationResult] = useState(null);
 
   // Fonction de soumission du formulaire
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     const confirmation = window.confirm(
-      `Voulez-vous réserver pour ${nombrePersonnes} personnes ?`
+      `Voulez-vous réserver pour ${nombrePersonnes} personnes le ${date} à ${heure} ?`
     );
 
     if (confirmation) {
-      // Envoyer la réservation (vous pouvez ajouter votre logique d'envoi ici)
-      alert(`Réservation pour ${nombrePersonnes} personnes confirmée !`);
+      try {
+        const response = await fetch(
+          `https://bbessere.lpmiaw.univ-lr.fr/resto.php?setreservation=true&id=89&name=DELAPORTE&datetime=${date} ${heure}&amount=${nombrePersonnes}`
+        );
+
+        if (response.ok) {
+          const data = await response.json();
+          console.log(data)
+
+          if (data >= 1) {
+            setReservationResult(`Réservation réussie`);
+          } else {
+            setReservationResult("Erreur : le restaurant est complet ou fermé à cette date");
+          }
+        } else {
+          setReservationResult("Erreur lors de la requête, veuillez réessayer");
+        }
+      } catch (error) {
+        console.error("Erreur lors de la requête :", error);
+        setReservationResult("Erreur lors de la requête, veuillez réessayer");
+      }
     }
   };
 
@@ -80,6 +101,7 @@ const Reservation = function Reservation(props) {
         </p>
         <br />
         <button type="submit">Réserver</button>
+        {reservationResult}
       </form>
     </div>
   );

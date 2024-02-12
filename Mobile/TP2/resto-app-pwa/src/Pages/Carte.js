@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./styles";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -6,7 +6,19 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const Carte = function Carte(props) {
-  console.log("Chargement du composant Carte");
+
+  const [plat, setPlat] = useState('');
+
+  useEffect(() => {
+    console.log('ok')
+    fetch("https://bbessere.lpmiaw.univ-lr.fr/resto.php?getsuggestion=true")
+      .then((response) => response.text())
+      .then((data) => {
+        console.log(data);
+        setPlat(data);
+      })
+      .catch((error) => console.error("Erreur lors de la requête :", error));
+  }, []);
 
   return (
     <div style={styles.container}>
@@ -93,7 +105,7 @@ const Carte = function Carte(props) {
 
       <Accordion>
         <AccordionDetails>
-          <p>Suggestion du chef : Hamburger</p>
+          <p>Suggestion du chef : {plat}</p>
         </AccordionDetails>
       </Accordion>
     </div>

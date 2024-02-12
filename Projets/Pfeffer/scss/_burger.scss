@@ -1,0 +1,96 @@
+.burger {
+  &__input {
+    display: none;
+
+    &:checked {
+      & ~ ul {
+        display: flex;
+        left: 0;
+      }
+      & ~ .burger__label {
+        &::after {
+          content: "X";
+        }
+      }
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    z-index: 3;
+    &::after {
+      content: "O";
+    }
+  }
+
+  &__items {
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 100vw;
+    font-size: 5.5rem;
+    z-index: 2;
+    transition: left 0.5s ease-in-out;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    &::before {
+      content: "";
+      height: 100vh;
+      display: block;
+      flex: 30%;
+      width: 30vw;
+      background-image: url("../img/liquid.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-right: 10px solid #343a40;
+    }
+
+    .burger__item {
+      height: 100%;
+      flex: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-left: 5vw;
+    }
+
+    .lang {
+      &__text {
+        font-size: 4rem;
+      }
+
+      &__flags {
+        display: flex;
+        position: relative;
+
+        &--en {
+          ::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            background-image: url("../img/UK.png");
+            display: block;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    // background-color: blue; // Ajoutez ici la couleur bleue pour le header
+  }
+}
+@media screen and (width<600px) {
+  .header {
+    // background-color: blue; // Ajoutez ici la couleur bleue pour le header
+  }
+}

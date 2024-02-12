@@ -1,211 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexy DELAPORTE</title>
-    <script src="https://kit.fontawesome.com/6839368886.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-</head>
+    <script
+      src="https://kit.fontawesome.com/6839368886.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <section class="header__main">
-            <section class="header__main__info">
-                <p class="header__main__info__text">Les commandes passées avant le 21 décembre seront livrées avant le
-                    24
-                    décembre
-                </p>
-                <a class="header__main__info__contact" href="#">contact@taylors.fr</a>
-            </section>
-            <h1 class="header__main__title">Chaussures sur-mesure <span>pour hommes</span></h1>
-            <h2 class="header__main__text">Une chaussure de qualité vous assure un confort au quotidien !</h2>
-            <section class="header__main__buttons">
-                <a href="#" class="header__main__buttons__discover">Découvrir un
-                    savoir-faire</a>
-                <a href="#" class="header__main__buttons__winter">Collection Hiver</a>
-            </section>
+      <section class="header__main">
+        <section class="header__main__info">
+          <p class="header__main__info__text">
+            Les commandes passées avant le 21 décembre seront livrées avant le
+            24 décembre
+          </p>
+          <a class="header__main__info__contact" href="#">contact@taylors.fr</a>
         </section>
-        <nav class="menu">
-            <input type="checkbox" id="icone-burger-close">
-            <label for="icone-burger-close"></label>
-            <ul class="menu__items">
-                <h2 class="menu__items__title">Tailor's</h2>
-                <li class="menu__item">L'atelier</li>
-                <li class="menu__item">Collections</li>
-                <li class="menu__item">Accessoires</li>
-                <li class="menu__item">Contact</li>
-                <ul class="menu__items__icons">
-                    <li class="menu__icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_17_88)">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M0.408628 44.2124C-0.0757353 44.9069 -0.133917 45.8135 0.257719 46.564C0.649356 47.3149 1.42572 47.7858 2.27263 47.7858H45.5752C46.4217 47.7858 47.1984 47.3149 47.5901 46.564C47.9817 45.8135 47.9235 44.9069 47.4388 44.2124C41.4966 35.6967 33.1246 30.4949 23.9239 30.4949C14.7232 30.4949 6.35081 35.6967 0.408628 44.2124ZM6.98863 43.2404C11.6632 38.1335 17.5224 35.0404 23.9239 35.0404C30.3254 35.0404 36.1843 38.1335 40.8592 43.2404H6.98863ZM23.837 0C16.0301 0 9.6919 6.33818 9.6919 14.1451C9.6919 21.9516 16.0301 28.2898 23.837 28.2898C31.6435 28.2898 37.9817 21.9516 37.9817 14.1451C37.9817 6.33818 31.6435 0 23.837 0V0ZM23.837 4.54545C29.1348 4.54545 33.4363 8.84691 33.4363 14.1451C33.4363 19.4429 29.1348 23.7444 23.837 23.7444C18.5388 23.7444 14.2374 19.4429 14.2374 14.1451C14.2374 8.84691 18.5388 4.54545 23.837 4.54545Z"
-                                    fill="black" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_17_88">
-                                    <rect width="48" height="48" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </li>
-                    <li class="menu__icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_17_87)">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M35.0213 39.2708L42.7675 46.927C43.8889 48.0356 45.6992 48.0251 46.8078 46.9033C47.9163 45.7819 47.9058 43.9711 46.7845 42.863L39.0592 35.2274C41.8711 31.5588 43.5419 26.9727 43.5419 21.9995C43.5419 9.98394 33.787 0.228516 21.771 0.228516C9.75543 0.228516 0 9.98394 0 21.9995C0 34.0155 9.75543 43.7705 21.771 43.7705C26.7552 43.7705 31.3504 42.0923 35.0213 39.2708ZM21.771 5.9428C30.6331 5.9428 37.8277 13.1378 37.8277 21.9995C37.8277 30.8617 30.6331 38.0562 21.771 38.0562C12.9093 38.0562 5.71429 30.8617 5.71429 21.9995C5.71429 13.1378 12.9093 5.9428 21.771 5.9428Z"
-                                    fill="black" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_17_87">
-                                    <rect width="48" height="48" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </li>
-                    <li class="menu__icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_17_86)">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M10.2294 10.7337H2.23881C1.00227 10.7337 0 11.736 0 12.9726V44.923C0 46.1592 1.00227 47.1618 2.23881 47.1618H45.417C46.6535 47.1618 47.6558 46.1592 47.6558 44.923V12.9726C47.6558 11.736 46.6535 10.7337 45.417 10.7337H37.426C35.6264 4.93434 30.216 0.716431 23.8277 0.716431C17.4398 0.716431 12.0294 4.93434 10.2294 10.7337ZM35.6053 15.2114H43.1781V42.6842H4.47761V15.2114H11.9767L12.6387 15.2131C16.0739 15.2196 32.0869 15.2371 35.1636 15.2189C35.3413 15.2178 35.4892 15.2149 35.6053 15.2114ZM15.0276 10.7337C16.6016 7.45721 19.9526 5.19404 23.8277 5.19404C27.7032 5.19404 31.0546 7.45757 32.6285 10.7341L15.0276 10.7337Z"
-                                    fill="black" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_17_86">
-                                    <rect width="48" height="48" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </li>
-                </ul>
+        <h1 class="header__main__title">
+          Chaussures sur-mesure <span>pour hommes</span>
+        </h1>
+        <h2 class="header__main__text">
+          Une chaussure de qualité vous assure un confort au quotidien !          
+        </h2>
+        <section class="header__main__buttons">
+          <a href="#" class="header__main__buttons__discover"
+            >Découvrir un savoir-faire</a
+          >
+          <a href="#" class="header__main__buttons__winter">Collection Hiver</a>
+        </section>
+      </section>
+      <nav class="menu">
+        <input type="checkbox" id="icone-burger-close" />
+        <label for="icone-burger-close"></label>
+        <ul class="menu__items">
+          <li>
+            <h2 class="menu__items__title">Tailor's</h2>
+          </li>
+          <li class="menu__item">L'atelier</li>
+          <li class="menu__item">Collections</li>
+          <li class="menu__item">Accessoires</li>
+          <li class="menu__item">Contact</li>
+          <li>
+            <ul class="menu__items__icons">
+              <li class="menu__icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_17_88)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.408628 44.2124C-0.0757353 44.9069 -0.133917 45.8135 0.257719 46.564C0.649356 47.3149 1.42572 47.7858 2.27263 47.7858H45.5752C46.4217 47.7858 47.1984 47.3149 47.5901 46.564C47.9817 45.8135 47.9235 44.9069 47.4388 44.2124C41.4966 35.6967 33.1246 30.4949 23.9239 30.4949C14.7232 30.4949 6.35081 35.6967 0.408628 44.2124ZM6.98863 43.2404C11.6632 38.1335 17.5224 35.0404 23.9239 35.0404C30.3254 35.0404 36.1843 38.1335 40.8592 43.2404H6.98863ZM23.837 0C16.0301 0 9.6919 6.33818 9.6919 14.1451C9.6919 21.9516 16.0301 28.2898 23.837 28.2898C31.6435 28.2898 37.9817 21.9516 37.9817 14.1451C37.9817 6.33818 31.6435 0 23.837 0V0ZM23.837 4.54545C29.1348 4.54545 33.4363 8.84691 33.4363 14.1451C33.4363 19.4429 29.1348 23.7444 23.837 23.7444C18.5388 23.7444 14.2374 19.4429 14.2374 14.1451C14.2374 8.84691 18.5388 4.54545 23.837 4.54545Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_17_88">
+                      <rect width="48" height="48" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </li>
+              <li class="menu__icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_17_87)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M35.0213 39.2708L42.7675 46.927C43.8889 48.0356 45.6992 48.0251 46.8078 46.9033C47.9163 45.7819 47.9058 43.9711 46.7845 42.863L39.0592 35.2274C41.8711 31.5588 43.5419 26.9727 43.5419 21.9995C43.5419 9.98394 33.787 0.228516 21.771 0.228516C9.75543 0.228516 0 9.98394 0 21.9995C0 34.0155 9.75543 43.7705 21.771 43.7705C26.7552 43.7705 31.3504 42.0923 35.0213 39.2708ZM21.771 5.9428C30.6331 5.9428 37.8277 13.1378 37.8277 21.9995C37.8277 30.8617 30.6331 38.0562 21.771 38.0562C12.9093 38.0562 5.71429 30.8617 5.71429 21.9995C5.71429 13.1378 12.9093 5.9428 21.771 5.9428Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_17_87">
+                      <rect width="48" height="48" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </li>
+              <li class="menu__icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_17_86)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.2294 10.7337H2.23881C1.00227 10.7337 0 11.736 0 12.9726V44.923C0 46.1592 1.00227 47.1618 2.23881 47.1618H45.417C46.6535 47.1618 47.6558 46.1592 47.6558 44.923V12.9726C47.6558 11.736 46.6535 10.7337 45.417 10.7337H37.426C35.6264 4.93434 30.216 0.716431 23.8277 0.716431C17.4398 0.716431 12.0294 4.93434 10.2294 10.7337ZM35.6053 15.2114H43.1781V42.6842H4.47761V15.2114H11.9767L12.6387 15.2131C16.0739 15.2196 32.0869 15.2371 35.1636 15.2189C35.3413 15.2178 35.4892 15.2149 35.6053 15.2114ZM15.0276 10.7337C16.6016 7.45721 19.9526 5.19404 23.8277 5.19404C27.7032 5.19404 31.0546 7.45757 32.6285 10.7341L15.0276 10.7337Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_17_86">
+                      <rect width="48" height="48" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </li>
             </ul>
-        </nav>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main">
-        <section class="collection">
-            <h2 class="collection__title">Collection hiver 2022</h2>
-            <a class="collection__discover" href="#">Découvrir</a>
-            <h3 class="collection__subhead">Notre sélection</h3>
-            <ul class="collection__items">
-                <li class="collection__item">
-                    <img src="images/mocassin-1.png" alt="Mocassins" class="collection__item__img">
-                    <h4 class="collection__item__title">Mocassin 180</h4>
-                    <ul class="collection__item__payment">
-                        <li class="collection__item__payment__prize">1 960€</li>
-                        <li class="collection__item__payment__order">Commander</li>
-                    </ul>
-                </li>
-                <li class="collection__item">
-                    <img src="images/richelieu.png" alt="Richelieues" class="collection__item__img">
-                    <h4 class="collection__item__title">Richelieu Cuir</h4>
-                    <ul class="collection__item__payment">
-                        <li class="collection__item__payment__prize">1 687€</li>
-                        <li class="collection__item__payment__order">Commander</li>
-                    </ul>
-                </li>
-                <li class="collection__item">
-                    <img src="images/bottines.png" alt="Bottines" class=" collection__item__img">
-                    <h4 class="collection__item__title">Bottines</h4>
-                    <ul class="collection__item__payment">
-                        <li class="collection__item__payment__prize">2 439€</li>
-                        <li class="collection__item__payment__order">Commander</li>
-                    </ul>
-                </li>
+      <section class="collection">
+        <h2 class="collection__title">Collection hiver 2022</h2>
+        <a class="collection__discover" href="#">Découvrir</a>
+        <h3 class="collection__subhead">Notre sélection</h3>
+        <ul class="collection__items">
+          <li class="collection__item">
+            <img
+              src="images/mocassin-1.png"
+              alt="Mocassins"
+              class="collection__item__img"
+            />
+            <h4 class="collection__item__title">Mocassin 180</h4>
+            <ul class="collection__item__payment">
+              <li class="collection__item__payment__prize">1 960€</li>
+              <li class="collection__item__payment__order">Commander</li>
             </ul>
+          </li>
+          <li class="collection__item">
+            <img
+              src="images/richelieu.png"
+              alt="Richelieues"
+              class="collection__item__img"
+            />
+            <h4 class="collection__item__title">Richelieu Cuir</h4>
+            <ul class="collection__item__payment">
+              <li class="collection__item__payment__prize">1 687€</li>
+              <li class="collection__item__payment__order">Commander</li>
+            </ul>
+          </li>
+          <li class="collection__item">
+            <img
+              src="images/bottines.png"
+              alt="Bottines"
+              class="collection__item__img"
+            />
+            <h4 class="collection__item__title">Bottines</h4>
+            <ul class="collection__item__payment">
+              <li class="collection__item__payment__prize">2 439€</li>
+              <li class="collection__item__payment__order">Commander</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="identity">
+        <section class="history">
+          <h2 class="history__title">Un savoir-faire unique</h2>
+          <h3 class="history__subhead">De père en fils</h3>
+          <a href="#" class="history__link">En savoir +</a>
+          <ul class="history__infos">
+            <li class="history__info">
+              <h4 class="history__info__time">120 ans</h4>
+              <p class="history__info__text">D'expérience dans le sur-mesure</p>
+            </li>
+            <li class="history__info">
+              <h4 class="history__info__time">+ 50 h</h4>
+              <p class="history__info__text">
+                De montage passées sur chaque modèle
+              </p>
+            </li>
+          </ul>
         </section>
-        <section class="identity">
-            <section class="history">
-                <h2 class="history__title">Un savoir-faire unique</h2>
-                <h3 class="history__subhead">De père en fils</h3>
-                <a href="#" class="history__link">En savoir +</a>
-                <ul class="history__infos">
-                    <li class="history__info">
-                        <h4 class="history__info__time">120 ans</h4>
-                        <p class="history__info__text">D'expérience dans le sur-mesure</p>
-                    </li>
-                    <li class="history__info">
-                        <h4 class="history__info__time">+ 50 h</h4>
-                        <p class="history__info__text">De montage passées sur chaque modèle</p>
-                    </li>
-                </ul>
-            </section>
-            <aside class="conception">
-                <a href="#" class="conception__link">En savoir +</a>
-                <ul class="conception__items">
-                    <li class="conception__item">
-                        <img src="images/bottier-2.png" alt="Bottier 2" class="conception__item__img">
-                        <h2 class="conception__item__title">Essayage</h2>
-                        <p class="conception__item__text">Tous les gestes de cette étape devront être précis tout en
-                            sollicitant la force physique du
-                            bottier, la résistance de la couture de montage conditionnant la solidité du soulier.</p>
-                    </li>
-                    <li class="conception__item">
-                        <img src="images/bottier-4.png" alt="Bottier 3" class="conception__item__img">
-                        <h2 class="conception__item__title">Montage</h2>
-                        <p class="conception__item__text">Tous les gestes de cette étape devront être précis tout en
-                            sollicitant la force physique du
-                            bottier, la résistance de la couture de montage conditionnant la solidité du soulier.</p>
-                    </li>
-                    <li class="conception__item">
-                        <img src="images/bottier-3.png" alt="Bottier 4" class="conception__item__img">
-                        <h2 class="conception__item__title">Finitions</h2>
-                        <p class="conception__item__text">Tous les gestes de cette étape devront être précis tout en
-                            sollicitant la force physique du
-                            bottier, la résistance de la couture de montage conditionnant la solidité du soulier.</p>
-                    </li>
-                </ul>
-            </aside>
-        </section>
+        <aside class="conception">
+          <a href="#" class="conception__link">En savoir +</a>
+          <ul class="conception__items">
+            <li class="conception__item">
+              <img
+                src="images/bottier-2.png"
+                alt="Bottier 2"
+                class="conception__item__img"
+              />
+              <h2 class="conception__item__title">Essayage</h2>
+              <p class="conception__item__text">
+                Tous les gestes de cette étape devront être précis tout en
+                sollicitant la force physique du bottier, la résistance de la
+                couture de montage conditionnant la solidité du soulier.
+              </p>
+            </li>
+            <li class="conception__item">
+              <img
+                src="images/bottier-4.png"
+                alt="Bottier 3"
+                class="conception__item__img"
+              />
+              <h2 class="conception__item__title">Montage</h2>
+              <p class="conception__item__text">
+                Tous les gestes de cette étape devront être précis tout en
+                sollicitant la force physique du bottier, la résistance de la
+                couture de montage conditionnant la solidité du soulier.
+              </p>
+            </li>
+            <li class="conception__item">
+              <img
+                src="images/bottier-3.png"
+                alt="Bottier 4"
+                class="conception__item__img"
+              />
+              <h2 class="conception__item__title">Finitions</h2>
+              <p class="conception__item__text">
+                Tous les gestes de cette étape devront être précis tout en
+                sollicitant la force physique du bottier, la résistance de la
+                couture de montage conditionnant la solidité du soulier.
+              </p>
+            </li>
+          </ul>
+        </aside>
+      </section>
     </main>
     <footer class="footer">
-        <ul class="footer__elements">
-            <li class="footer__links">
-                <h2 class="footer__links__title">Besoin d'aide ?</h2>
-                <p class="footer__link">Nous contacter</p>
-                <p class="footer__link">Suivi commande</p>
-                <p class="footer__link">Livraison & Retours</p>
-                <p class="footer__link">Contact</p>
-            </li>
-            <li class="footer__links">
-                <h2 class="footer__links__title">TAYLOR'S</h2>
-                <p class="footer__link">L'atelier</p>
-                <p class="footer__link">Collections</p>
-                <p class="footer__link">Accessoires</p>
-                <p class="footer__link">Contact</p>
-            </li>
-            <li class="footer__links">
-                <h2 class="footer__links__title">Informations légales</h2>
-                <p class="footer__link">Mentions légales</p>
-                <p class="footer__link">Politique de Confidentialité</p>
-                <p class="footer__link">Politique relative aux cookies</p>
-                <p class="footer__link">Conditions générales de vente</p>
-            </li>
-            <li class="footer__links">
-                <h2 class="footer__links__title">Trouver notre boutique</h2>
-                <p class="footer__link"><strong>TAILOR'S</strong></p>
-                <p class="footer__link">8 Rue Simone de Beauvoir</p>
-                <p class="footer__link">17000 La Rochelle</p>
-                <p class="footer__link">+33(0)2 17 91 73 36</p>
-                <p class="footer__link">Ouvert du lundi au samedi: 10:00 - 19:00</p>
-            </li>
-            <li class="footer__links footer__newsletter">
-                <h2 class="footer__links__title">Newsletter</h2>
-                <p>Soyez les premiers à recevoir des informations sur les nouveaux produits et les actualités de la
-                    boutique TAYLOR'S</p>
-                <input type="text" placeholder="saisissez votre adresse mail" class="footer__newsletter__mail">
-                <input type="submit" value="->" class="footer__newsletter__submit">
-            </li>
-        </ul>
-        <section class="footer__copyright">
-            <p>©TAYLOR'S 2022 - Tous droits réservés</p>
-        </section>
+      <ul class="footer__elements">
+        <li class="footer__links">
+          <h2 class="footer__links__title">Besoin d'aide ?</h2>
+          <p class="footer__link">Nous contacter</p>
+          <p class="footer__link">Suivi commande</p>
+          <p class="footer__link">Livraison & Retours</p>
+          <p class="footer__link">Contact</p>
+        </li>
+        <li class="footer__links">
+          <h2 class="footer__links__title">TAYLOR'S</h2>
+          <p class="footer__link">L'atelier</p>
+          <p class="footer__link">Collections</p>
+          <p class="footer__link">Accessoires</p>
+          <p class="footer__link">Contact</p>
+        </li>
+        <li class="footer__links">
+          <h2 class="footer__links__title">Informations légales</h2>
+          <p class="footer__link">Mentions légales</p>
+          <p class="footer__link">Politique de Confidentialité</p>
+          <p class="footer__link">Politique relative aux cookies</p>
+          <p class="footer__link">Conditions générales de vente</p>
+        </li>
+        <li class="footer__links">
+          <h2 class="footer__links__title">Trouver notre boutique</h2>
+          <p class="footer__link"><strong>TAILOR'S</strong></p>
+          <p class="footer__link">8 Rue Simone de Beauvoir</p>
+          <p class="footer__link">17000 La Rochelle</p>
+          <p class="footer__link">+33(0)2 17 91 73 36</p>
+          <p class="footer__link">Ouvert du lundi au samedi: 10:00 - 19:00</p>
+        </li>
+        <li class="footer__links footer__newsletter">
+          <h2 class="footer__links__title">Newsletter</h2>
+          <p>
+            Soyez les premiers à recevoir des informations sur les nouveaux
+            produits et les actualités de la boutique TAYLOR'S
+          </p>
+          <input
+            type="text"
+            placeholder="saisissez votre adresse mail"
+            class="footer__newsletter__mail"
+          />
+          <input type="submit" value="->" class="footer__newsletter__submit" />
+        </li>
+      </ul>
+      <section class="footer__copyright">
+        <p>©TAYLOR'S 2022 - Tous droits réservés</p>
+      </section>
     </footer>
-</body>
-
+  </body>
 </html>

@@ -145,7 +145,7 @@ table {
   width: 100vw;
   height: 100vh;
   top: 0;
-  left: -100vw;
+  left: 100vw;
   transition: left 1s;
   text-transform: uppercase;
   display: flex;
@@ -557,4 +557,4 @@ img {
     text-align: center;
     padding: 2vh 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}

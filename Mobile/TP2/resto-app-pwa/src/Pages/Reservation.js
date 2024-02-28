@@ -26,12 +26,14 @@ const Reservation = function Reservation(props) {
 
         if (response.ok) {
           const data = await response.json();
-          console.log(data)
+          console.log(data);
 
           if (data >= 1) {
             setReservationResult(`Réservation réussie`);
           } else {
-            setReservationResult("Erreur : le restaurant est complet ou fermé à cette date");
+            setReservationResult(
+              "Erreur : le restaurant est complet ou fermé à cette date"
+            );
           }
         } else {
           setReservationResult("Erreur lors de la requête, veuillez réessayer");
@@ -75,7 +77,7 @@ const Reservation = function Reservation(props) {
         <label>
           Nombre de personnes:
           <div>
-            {["1 / 2", "2 / 3", "4 / 5", "6 / 7", "7 / 8"].map((number) => (
+            {["1", "2", "3", "4", "5"].map((number) => (
               <button
                 key={number}
                 type="button"

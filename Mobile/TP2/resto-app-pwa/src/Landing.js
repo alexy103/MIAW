@@ -35,13 +35,27 @@ class Landing extends React.Component {
     const isFullStar = index + 1 <= antineaRating;
 
     if (isFullStar) {
-      return <StarIcon key={index} size={24} />;
+      return (
+        <StarIcon
+          key={index}
+          size={24}
+          style={{ color: "gold", cursor: "pointer" }}
+        />
+      );
     } else if (isHalfStar) {
-      return <StarHalfIcon key={index} size={24} />;
+      return (
+        <StarHalfIcon
+          key={index}
+          size={24}
+          style={{ color: "gold", cursor: "pointer" }}
+        />
+      );
     } else {
-      return <StarIcon key={index} size={24} style={{ color: "transparent" }} />;
+      return (
+        <StarIcon key={index} size={24} style={{ color: "transparent" }} />
+      );
     }
-  };
+  };  
 
   render() {
     const {
@@ -72,7 +86,9 @@ class Landing extends React.Component {
           {/* Afficher le nombre d'étoiles pour Antinea avec StarIcon */}
           {antineaRating !== null && (
             <div>
-              {[...Array(5)].map((_, index) => this.renderStarIcon(index, antineaRating))}
+              {[...Array(5)].map((_, index) =>
+                this.renderStarIcon(index, antineaRating)
+              )}
             </div>
           )}
           {!showAntineaPages ? (

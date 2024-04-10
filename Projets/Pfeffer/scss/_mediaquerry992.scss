@@ -1,0 +1,24 @@
+@media screen and (min-width:992px) {
+    .about{
+        .portrait{
+            flex-direction: row;
+            justify-content: space-around;
+    
+            &__text{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-left: 2vw;
+                font-size: 2.2rem;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    
+        &__photos{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

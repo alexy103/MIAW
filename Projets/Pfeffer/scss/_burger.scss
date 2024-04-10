@@ -20,9 +20,11 @@
     position: absolute;
     top: 2vw;
     right: 2vw;
-    z-index: 3;
+    z-index: 4;
     &::after {
-      content: "O";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f0c9";
     }
   }
 
@@ -33,13 +35,15 @@
     height: 100vh;
     top: 0;
     left: 100vw;
-    font-size: 5.5rem;
-    z-index: 2;
+    font-size: 3rem;
+    z-index: 3;
     transition: left 0.5s ease-in-out;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     &::before {
+      position: absolute;
       content: "";
       height: 100vh;
       display: block;
@@ -48,7 +52,7 @@
       background-image: url("../img/liquid.png");
       background-repeat: no-repeat;
       background-size: cover;
-      border-right: 10px solid #343a40;
+      border-right: 5px solid #343a40;
     }
 
     .burger__item {
@@ -57,40 +61,78 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      margin-left: 5vw;
+      margin-left: 35vw;
     }
 
     .lang {
+      font-size: 2rem;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 2vh;
+      margin-left: 35vw;
+
       &__text {
         font-size: 4rem;
+        text-decoration: underline;
+        text-align: center;
       }
 
       &__flags {
         display: flex;
+        flex-direction: column;
         position: relative;
+        gap: 1vh;
 
-        &--en {
-          ::before {
-            content: "";
-            width: 30px;
-            height: 30px;
-            background-image: url("../img/UK.png");
-            display: block;
-            position: absolute;
+        .flag {
+          flex: 50%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            width: 30%;
           }
         }
+      }
+      .trp-ls-language-name {
+        margin-left: 1vw;
       }
     }
   }
 }
 
-@media screen and (min-width: 600px) {
-  .header {
-    // background-color: blue; // Ajoutez ici la couleur bleue pour le header
+@media screen and (width>600px) {
+  .burger {
+    &__items {
+      font-size: 4rem;
+      &::before {
+        border-right: 8px solid #343a40;
+      }
+    }
   }
 }
-@media screen and (width<600px) {
-  .header {
-    // background-color: blue; // Ajoutez ici la couleur bleue pour le header
+
+@media screen and (width>992px) {
+  .burger {
+    &__items {
+      font-size: 5rem;
+      &::before {
+        border-right: 10px solid #343a40;
+      }
+    }
+    .lang {
+      position: absolute;
+      margin-left: inherit;
+      right: 5vw;
+    }
+  }
+}
+
+@media screen and (width>1440px) {
+  .burger {
+    &__items {
+      font-size: 6rem;
+    }
   }
 }

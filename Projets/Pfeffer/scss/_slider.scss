@@ -1,0 +1,62 @@
+swiper-container::part(pagination) {
+  bottom: -3vh;
+}
+swiper-container::part(container) {
+  overflow: inherit;
+}
+swiper-container::part(button-prev),
+swiper-container::part(button-next) {
+  color: black;
+}
+
+body {
+  overflow: hidden;
+}
+
+swiper-container {
+  width: 100%;
+  height: 70vh !important;
+  margin: 0 !important;
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+}
+
+swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw !important;
+
+  figure {
+    max-width: 70vw;
+  }
+}
+
+swiper-slide img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 60vh;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 50%;
+    bottom: -49%;
+  }
+  &::after {
+    background: url("../img/home.png");
+    transform: scaleY(-1);
+  }
+  &::before {
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), #fff);
+  }
+}

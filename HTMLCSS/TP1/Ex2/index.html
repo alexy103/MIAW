@@ -1,311 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EX2 HTML CSS</title>
-</head>
-
-<body>
-    <nav>
-        <div>
-            <a href="">Shop</a>
-            <a href="">Contact</a>
-            <img src="#" alt="Burger">
-        </div>
-        <div>
-            <a href="">Sign in</a>
-            <a href="">Cart</a>
-            <img src="img/cart.svg" alt="Panier">
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP GRID</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="body">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar__icon navbar__icon--left">
+        <a href="">Shop</a>
+        <a href="">Contact</a>
+        <img src="img/Burger.svg" alt="Burger" />
+      </div>
+      <div class="navbar__icon navbar__icon--right">
+        <a href="">Sign in</a>
+        <a href="">Cart</a>
+        <img src="img/cart.svg" alt="Panier" />
+      </div>
     </nav>
-    <aside>
-        <section>
-            <h2>Shopping Cart</h2>
-            <p>X</p>
-        </section>
-        <section>
-            <figure>
-                <img src="img/hero.webp" alt="">
-                <figcaption>
-                    <h3>Rosy Delight</h3>
-                    <p>Quantity (1)</p>
-                    <p>$100</p>
-                </figcaption>
-            </figure>
-            <p>Remove</p>
-        </section>
-        <section>
-            <p>Subtotal</p>
-            <p>$100.00</p>
-        </section>
-        <section>
-            <input type="text" id="message" name="message" placeholder="Gift Message">
-        </section>
-        <section>
-            <p>Shipping & taxes calculated at checkout</p>
-            <p>Free standard shipping within Kyiv</p>
-        </section>
-        <a href="#">CHECK OUT</a>
-    </aside>
-
-    <nav class="burger">
-        <ul>
-            <li>X</li>
-            <li>Sign in</li>
-            <li>Shop</li>
-            <li>Servise</li>
-            <li>Contact</li>
-            <li>About us</li>
-            <li>
-                <ul>
-                    <li>Shipping & returns</li>
-                    <li>Terms & conditions</li>
-                    <li>Privacy policy</li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li><img src="img/instagram.svg" alt="Instagram"></li>
-                    <li><img src="img/pinterest.svg" alt="Pinterest"></li>
-                    <li><img src="img/facebook.svg" alt="Facebook"></li>
-                    <li><img src="img/twitter.svg" alt="Twitter"></li>
-                    <li><img src="img/telegram.svg" alt="Telegram"></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <section>
-            <hgroup>
-                <h1>Kyiv <span>LuxeBouquets<sup>&reg;</sup></span></h1>
-                <p>Discover Uniquely Crafted Bouquets and Gifts for Any Occasion: Spread Joy with Our Online Flower
-                    Delivery Service</p>
-            </hgroup>
-            <figure>
-                <img src="img/hero.webp" alt="">
-                <figcaption>Experience the joy of giving with our modern floral studio. Order online and send
-                    freshflowers, plants and gifts today.</figcaption>
-            </figure>
-        </section>
-        <section>
-            <section>
-                <p>Fresh Flowers</p>
-                <a href="#">Shop now</a>
-            </section>
-            <img src="img/item1.webp" alt="">
-            <img src="img/item2.webp" alt="">
-            <section>
-                <p>Dried Flowers</p>
-                <a href="#">Shop now</a>
-            </section>
-            <section>
-                <p>Live Plants</p>
-                <a href="#">Shop now</a>
-            </section>
-            <img src="img/item3.webp" alt="">
-            <img src="img/item4.webp" alt="">
-            <section>
-                <p>Aroma Candels</p>
-                <a href="#">Shop now</a>
-            </section>
-            <section>
-                <p>Fresheners</p>
-                <a href="#">Shop now</a>
-            </section>
-            <img src="img/item5.webp" alt="">
-        </section>
+    <!-- HEADER -->
+    <header class="header">
+      <section class="header__section">
+        <h1 class="header__title">
+          Kyiv <span>LuxeBouquets<sup>&reg;</sup></span>
+        </h1>
+        <p class="header__description">
+          Discover Uniquely Crafted Bouquets and Gifts for Any Occasion:
+        </p>
+        <p class="header__description">
+          Spread Joy Our Online Flower Delivery Service
+        </p>
+      </section>
+      <figure class="header__figure">
+        <img src="./img/hero.webp" alt="hero" class="figure__img" />
+        <figcaption class="figure__figcaption">
+          Experience the joy of giving with our modern floral studio. Order
+          online and send fresh flowers, plants and gifts today.
+        </figcaption>
+      </figure>
     </header>
 
-    <main>
-        <section>
-            <h2></h2>
-            <article>
-                <h3></h3>
-                <p></p>
-                <p></p>
-                <a href=""></a>
-            </article>
-        </section>
-        <section>
-            <h2>Why choose us ?</h2>
-            <div>
-                <article>
-                    <h3>Stylish bouquets by florists</h3>
-                    <p>At our floral studio, our professional florists craft the most elegant and stylish bouquets using
-                        only the freshest and highest quality materials available. We stay up-to-date with the latest
-                        floral design trends and offer unique arrangements that are sure to impress. Let us brighten up
-                        your day with our stunning bouquets and same-day delivery service.</p>
-                </article>
-                <article>
-                    <h3>On-time delivery</h3>
-                    <p>Never miss a moment with our on-time flower delivery service. Our couriers will deliver your
-                        bouquet personally, without boxes, to ensure it arrives in perfect condition. Trust us to
-                        deliver your thoughtful gift reliably.</p>
-                </article>
-                <article>
-                    <h3>Safe payment</h3>
-                    <p>You can feel secure when placing an order with us, as we use industry-standard security measures
-                        to protect your payment information. Your transaction will be safe and hassle-free, so you can
-                        shop with confidence.</p>
-                </article>
-                <article>
-                    <h3>Subscription by your needs</h3>
-                    <p>With our subscription service tailored to your specific needs, you can enjoy the convenience of
-                        having beautiful bouquets delivered straight to your door at regular intervals. Our flexible
-                        service is perfect for busy individuals or those who want to ensure they always have fresh
-                        flowers on hand. You'll save time and money with this hassle-free solution to your floral needs.
-                    </p>
-                </article>
-            </div>
-        </section>
-        <section>
-            <section>
-                <h2>To contact us</h2>
-                <form action="#">
-                    <label for="phone">We will call you back</label>
-                    <p>
-                        <input type="tel" id="phone" name="phone" placeholder="+380 XX XXX XX XX">
-                        <input type="submit" value="BOOK A CALL">
-                    </p> <!-- le <p> permet de mettre les deux input sur la même ligne -->
-                </form>
-                <section>
-                    <section>
-                        <h2>Phone</h2>
-                        <section>
-                            <div>
-                                <img src="img/phone.svg" alt="Icône téléphone">
-                                <p>+380980099777</p>
-                            </div>
-                            <div>
-                                <img src="img/phone.svg" alt="Icône téléphone">
-                                <p>+380980099111</p>
-                            </div>
-                        </section>
-                    </section>
-                    <section>
-                        <h2>Address</h2>
-                        <section>
-                            <p>opening hours: 8 to 11 p.m.</p>
-                            <div>
-                                <img src="img/pin-bottom.svg" alt="Icône localisation">
-                                <p>15/4 Khreshchatyk Street, Kyiv</p>
-                            </div>
-                        </section>
-                    </section>
-                </section>
-                <section>
-                    <img src="img/shop.webp" alt="Devanture magasin">
-                    <p>Follow us</p>
-                    <ul>
-                        <li><img src="img/instagram.svg" alt="Instagram"></li>
-                        <li><img src="img/pinterest.svg" alt="Pinterest"></li>
-                        <li><img src="img/facebook.svg" alt="Facebook"></li>
-                        <li><img src="img/twitter.svg" alt="Twitter"></li>
-                        <li><img src="img/telegram.svg" alt="Telegram"></li>
-                    </ul>
-                </section>
-            </section>
-        </section>
-        <section>
-            <h2>Our Service</h2>
-            <figure>
-                <img src="img/subscription.webp" alt="Femme avec fleurs">
-                <figcaption>
-                    <h3>Flower Subscriptions</h3>
-                    <p>Service</p>
-                    <p>Experience the convenience and savings of regular flower deliveries with our flexible
-                        subscription service - up to 30% more profitable than one-time purchases.</p>
-                    <a href="#">SUBSCRIBE NOW</a>
-                </figcaption>
-            </figure>
-        </section>
-        <section>
-            <h2>Wedding & Event Decor</h2>
-            <p>Service</p>
-            <p>Let our team of expert florists and designers create stunning, on-trend floral décor for your special
-                day. Trust us to bring your vision to life.
-            </p>
-            <a href="#">INQUIRE NOW</a>
-        </section>
-        <aside>
-            <h2>Our clients say</h2>
-            <h3>Service</h3>
-            <img src="img/google.png" alt="">
-            <div>
-                <img src="img/arrow-left.svg" alt="Flèche vers la gauche">
-                <blockquote>
-                    <p>“Ordered flowers online and they were the best bouquet! Impressed everyone around. Highly
-                        recommend this flower shop!”</p>
-                    <footer>- Ronald Richards</footer>
-                </blockquote>
-                <img src="img/arrow-right.svg" alt="Flèche vers la droite">
-            </div>
-            <a href="#">READ REVIEWS</a>
-        </aside>
+    <!-- MAIN -->
+    <main class="main">
+      <!-- SECTION 1 - FLOWERS -->
+      <section class="flowers">
+        <figure class="flowers__figure">
+          <img src="./img/item1.webp" alt="item1" class="flowers__img" />
+          <figcaption class="flowers__figcaption">
+            <h3 class="flowers__title">Fresh Flowers</h3>
+            <p class="flowers__description">Shop now</p>
+          </figcaption>
+        </figure>
+
+        <figure class="flowers__figure">
+          <img src="./img/item2.webp" alt="item2" class="flowers__img" />
+          <figcaption class="flowers__figcaption">
+            <h3 class="flowers__title">Dried Flowers</h3>
+            <p class="flowers__description">Shop now</p>
+          </figcaption>
+        </figure>
+
+        <figure class="flowers__figure">
+          <img src="./img/item3.webp" alt="item3" class="flowers__img" />
+          <figcaption class="flowers__figcaption">
+            <h3 class="flowers__title">Live Plants</h3>
+            <p class="flowers__description">Shop now</p>
+          </figcaption>
+        </figure>
+
+        <figure class="flowers__figure">
+          <img src="./img/item4.webp" alt="item4" class="flowers__img" />
+          <figcaption class="flowers__figcaption">
+            <h3 class="flowers__title">Aroma Candels</h3>
+            <p class="flowers__description">Shop now</p>
+          </figcaption>
+        </figure>
+
+        <figure class="flowers__figure">
+          <img src="./img/item5.webp" alt="item5" class="flowers__img" />
+          <figcaption>
+            <h3 class="flowers__title">Fresheners</h3>
+            <p class="flowers__description">Shop now</p>
+          </figcaption>
+        </figure>
+      </section>
     </main>
 
-    <footer>
-        <section>
-            <form action="#">
-                <input type="email" id="mail" name="mail" placeholder="Your Email">
-                <input type="submit" value="REMIND">
-            </form>
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <ul>
-                <li>
-                    <h3>Address</h3>
-                    <p>15/4 Khreshchatyk Street, Kyiv</p>
-                </li>
-                <li>
-                    <h3>Phone</h3>
-                    <p>+380980099777</p>
-                </li>
-                <li>
-                    <h3>General Enquiry:</h3>
-                    <p>Kiev.Florist.Studio@gmail.com</p>
-                </li>
-            </ul>
-            <h2>Follow Us</h2>
-            <ul>
-                <li><img src="img/instagram.svg" alt="Instagram"></li>
-                <li><img src="img/pinterest.svg" alt="Pinterest"></li>
-                <li><img src="img/facebook.svg" alt="Facebook"></li>
-                <li><img src="img/twitter.svg" alt="Twitter"></li>
-                <li><img src="img/telegram.svg" alt="Telegram"></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Shop</h2>
-            <ul>
-                <li>All Products</li>
-                <li>Fresh Flowers</li>
-                <li>Dried Flowers</li>
-                <li>Live Plants</li>
-                <li>Designer Vases</li>
-                <li>Aroma Candles</li>
-                <li>Freshener Diffuser</li>
-            </ul>
-            <h2>Service</h2>
-            <ul>
-                <li>Flower Subscription</li>
-                <li>Wedding & Event Decor</li>
-            </ul>
-        </section>
-        <section>
-            <h2>About Us</h2>
-            <ul>
-                <li>Our story</li>
-                <li>Blog</li>
-                <li>Shipping & returns</li>
-                <li>Terms & conditions</li>
-                <li>Privacy policy</li>
-            </ul>
-        </section>
-    </footer>
-</body>
+    <!-- ABOUT US -->
+    <section class="about">
+      <h2 class="about__title">About us</h2>
 
+      <article class="article">
+        <p class="article__story">OUR STORY</p>
+        <h3 class="article__title">Kyiv LuxeBouquets</h3>
+        <p class="article__description">
+          We are a modern local floral studio, which specializes in the design
+          and delivery of unique bouquets. We have the best florists who
+          carefully select each look, our studio cooperates directly with farms
+          for growing different flowers, so we always have fresh flowers, which
+          are collected by our florists in exquisite bouquets. We have a
+          collection of fresh bouquets, collections of dried bouquets, house
+          plants, as well as fragrant candles from luxury brands to create the
+          perfect atmosphere. Make someone's day amazing by sending flowers,
+          plants and gifts the same or next day. Ordering flowers online has
+          never been easier.
+        </p>
+
+        <p class="article__learn">
+          <a href="#" class="article__link">LERN MORE</a>
+        </p>
+      </article>
+    </section>
+
+    <!-- WHY CHOOSE US ? -->
+    <section class="why">
+      <h2 class="why__title">Why choose us ?</h2>
+
+      <article class="article">
+        <h3 class="article__title">Stylish bouquets by florists</h3>
+        <p class="article__description">
+          At our floral studio, our professional florists craft the most elegant
+          and stylish bouquets using only the freshest and highest quality
+          materials available. We stay up-to-date with the latest floral design
+          trends and offer unique arrangements that are sure to impress. Let us
+          brighten up your day with our stunning bouquets and same-day delivery
+          service.
+        </p>
+      </article>
+
+      <article class="article">
+        <h3 class="article__title">Stylish bouquets by florists</h3>
+        <p class="article__description">
+          Never miss a moment with our on-time flower delivery service. Our
+          couriers will deliver your bouquet personally, without boxes, to
+          ensure it arrives in perfect condition. Trust us to deliver your
+          thoughtful gift reliably.
+        </p>
+      </article>
+
+      <article class="article">
+        <h3 class="article__title">Safe payment</h3>
+        <p class="article__description">
+          You can feel secure when placing an order with us, as we use
+          industry-standard security measures to protect your payment
+          information. Your transaction will be safe and hassle-free, so you can
+          shop with confidence.
+        </p>
+      </article>
+
+      <article class="article">
+        <h3 class="article__title">Subscription by your needs</h3>
+        <p class="article__description">
+          With our subscription service tailored to your specific needs, you can
+          enjoy the convenience of having beautiful bouquets delivered straight
+          to your door at regular intervals. Our flexible service is perfect for
+          busy individuals or those who want to ensure they always have fresh
+          flowers on hand. You'll save time and money with this hassle-free
+          solution to your floral needs.
+        </p>
+      </article>
+    </section>
+
+    <!-- FOLLOW US + CONTACT US-->
+    <section class="followcontact">
+      <section class="followcontact__section">
+        <img src="./img/shop.webp" alt="shop" class="followcontact__img" />
+
+        <!-- FOLLOW US -->
+        <section class="follow">
+          <h3 class="follow__title">Follow us:</h3>
+          <ul class="followmenu__items">
+            <li class="followmenu__item">
+              <a href="#" class="followmenu__link"
+                ><img
+                  src="./img/instagram.svg"
+                  alt="instagram"
+                  class="followmenu__img"
+              /></a>
+            </li>
+            <li class="followmenu__item">
+              <a href="#" class="followmenu__link"
+                ><img
+                  src="./img/pinterest.svg"
+                  alt="pinterest"
+                  class="followmenu__img"
+              /></a>
+            </li>
+            <li class="followmenu__item">
+              <a href="#" class="followmenu__link"
+                ><img
+                  src="./img/facebook.svg"
+                  alt="facebook"
+                  class="followmenu__img"
+              /></a>
+            </li>
+            <li class="followmenu__item">
+              <a href="#" class="followmenu__link"
+                ><img
+                  src="./img/twitter.svg"
+                  alt="twitter"
+                  class="followmenu__img"
+              /></a>
+            </li>
+            <li class="followmenu__item">
+              <a href="#" class="followmenu__link"
+                ><img
+                  src="./img/telegram.svg"
+                  alt="telegram"
+                  class="followmenu__img"
+              /></a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- CONTACT US -->
+        <section class="contact">
+          <h2 class="contact__title">To Contact Us</h2>
+          <p class="contact__description">We will call you back</p>
+
+          <form action="index.php" class="form">
+            <input type="text" name="phone" id="phone" class="form__input" />
+            <input type="submit" value="BOOK A CALL" class="form__input" />
+          </form>
+
+          <section class="phoneadress">
+            <section class="phone">
+              <p class="phone__title">Phone</p>
+              <ul class="phonemenu__items">
+                <li class="phonemenu__item">
+                  <p class="phonemenu__p">
+                    <a href="tel:+380980099777" class="phonemenu__link"
+                      ><img
+                        src="./img/phone.svg"
+                        alt="phone"
+                        class="phonemenu__img"
+                      />+380980099777</a
+                    >
+                  </p>
+                </li>
+                <li class="phonemenu__item">
+                  <p class="phonemenu__p">
+                    <a href="tel:+380980099777" class="phonemenu__link"
+                      ><img
+                        src="./img/phone.svg"
+                        alt="phone"
+                        class="phonemenu__img"
+                      />+380980099777</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </section>
+
+            <section class="adress">
+              <p class="adress__title">Address</p>
+
+              <ul class="adressmenu__items">
+                <li class="adressmenu__item">opening hours: 8 to 11 p.m.</li>
+                <li class="adressmenu__item">
+                  <img
+                    src="./img/pin-bottom.svg"
+                    alt="pin-bottom"
+                    class="adresssmenu__img"
+                  />15/4 Khreshchatyk Street, Kyiv
+                </li>
+              </ul>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- OUR SERVICE -->
+    <section class="service">
+      <h2 class="service__title">Our Service</h2>
+
+      <figure class="servicefigure">
+        <img
+          src="./img/subscription.webp"
+          alt="subscription"
+          class="servicefigure__img"
+        />
+        <figcaption class="servicefigure__figcaption">
+          <p class="servicefigure__p">SERVICE</p>
+          <h3 class="servicefigure__subtitle">Flower Subscription</h3>
+          <p class="servicefigure__description">
+            Experience the convenience and savings of regular flower deliveries
+            with our flexible subscription service - up to 30% more profitable
+            than one-time purchases.
+          </p>
+          <p class="servicefigure__description">
+            <a href="#" class="servicefigure__link">SUBSCRIBE NOW</a>
+          </p>
+        </figcaption>
+      </figure>
+
+      <section class="servicesection">
+        <p class="servicesection__p">SERVICE</p>
+        <h3 class="servicesection__title">Wedding & Event Decor</h3>
+        <p class="servicesection__description">
+          Let our team of expert florists and designers create stunning,
+          on-trend floral décor for your special day. Trust us to bring your
+          vision to life.
+        </p>
+        <p class="servicesection__description">
+          <a href="#" class="servicesection__link">INQUIRE NOW</a>
+        </p>
+      </section>
+    </section>
+
+    <!-- OUR CLIENT SAY -->
+    <aside class="aside">
+      <img src="./img/google.png" alt="google" class="aside__img" />
+      <p class="aside__p">REVIEWS</p>
+      <h2 class="aside__title">Our Clients say</h2>
+      <p class="aside__description">
+        “Ordered flowers online and they were the best bouquet! Impressed
+        everyone around. Highly recommend this flower shop!”
+      </p>
+      <p class="aside__description">- Ronald Richards</p>
+      <p class="aside__description">
+        <a href="#" class="aside__link">READ REVIEW</a>
+      </p>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <section class="footerremember">
+        <p class="footerremember__description">
+          Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines
+          Day, Mothers Day, Christmas... Reminds you 7 days before. No spam or
+          sharing your address
+        </p>
+        <form action="index.php" class="footerform">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            class="footerform__input"
+          />
+          <input type="submit" value="REMIND" class="footerform__input" />
+        </form>
+      </section>
+
+      <section class="footercontact">
+        <h4 class="footercontact__title">Contact Us</h4>
+        <p class="footercontact__adress">Adress</p>
+        <p class="footercontact__phone">Phone</p>
+        <p class="footercontact__num">+380980099777</p>
+        <p class="footercontact__general">General Enquiry:</p>
+        <p class="footercontact__mail">Kiev.Florist.Studio@gmail.com</p>
+      </section>
+
+      <section class="footerfollow">
+        <h4 class="footerfollow__title">Follow Us</h4>
+        <ul class="footerfollow__items">
+          <li class="footerfollow__item">
+            <a href="#" class="footerfollow__link"
+              ><img
+                src="./img/instagram.svg"
+                alt="instagram"
+                class="footerfollow__img"
+            /></a>
+          </li>
+          <li class="footerfollow__item">
+            <a href="#" class="footerfollow__link"
+              ><img
+                src="./img/pinterest.svg"
+                alt="pinterest"
+                class="footerfollow__img"
+            /></a>
+          </li>
+          <li class="footerfollow__item">
+            <a href="#" class="footerfollow__link"
+              ><img
+                src="./img/facebook.svg"
+                alt="facebook"
+                class="footerfollow__img"
+            /></a>
+          </li>
+          <li class="footerfollow__item">
+            <a href="#" class="footerfollow__link"
+              ><img
+                src="./img/twitter.svg"
+                alt="twitter"
+                class="footerfollow__img"
+            /></a>
+          </li>
+          <li class="footerfollow__item">
+            <a href="#" class="footerfollow__link"
+              ><img
+                src="./img/telegram.svg"
+                alt="telegram"
+                class="footerfollow__img"
+            /></a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footershopservice">
+        <section class="footershop">
+          <h4 class="footershop__title">Shop</h4>
+          <a href="#" class="footershop__link">All Products</a>
+          <a href="#" class="footershop__link">Fresh Flowers</a>
+          <a href="#" class="footershop__link">Dried Flowers</a>
+          <a href="#" class="footershop__link">Live Plants</a>
+          <a href="#" class="footershop__link">Designer Vases</a>
+          <a href="#" class="footershop__link">Aroma Candles</a>
+          <a href="#" class="footershop__link">Freshner Diffuser</a>
+        </section>
+
+        <section class="footerservice">
+          <h4 class="footerservice__title">Service</h4>
+          <a href="#" class="footerservice__link">Flower Subscription</a>
+          <a href="#" class="footerservice__link">Wedding & Event Decor</a>
+        </section>
+      </section>
+
+      <section class="footerabout">
+        <h4 class="footerabout__title">About Us</h4>
+        <a href="#" class="footerabout__link">Our story</a>
+        <a href="#" class="footerabout__link">Blog</a>
+        <a href="#" class="footerabout__link">Shipping & returns</a>
+        <a href="#" class="footerabout__link">Terms & conditions</a>
+        <a href="#" class="footerabout__link">Privacy policy</a>
+      </section>
+    </footer>
+  </body>
 </html>
